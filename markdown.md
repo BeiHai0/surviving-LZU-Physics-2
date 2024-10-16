@@ -127,3 +127,22 @@ $$
 \underbrace{a}_{b}
 $$
 
+$$
+\ket{\darr},\ket{\uarr},\larr,\rarr,\lrarr
+$$
+
+$$
+\overset{\lrarr}{T},\overleftrightarrow{T},\overleftrightarrow{T}
+$$
+
+$$
+\harr,\Harr
+$$
+
+$$
+\implies
+$$
+
+$$
+\intop 
+$$

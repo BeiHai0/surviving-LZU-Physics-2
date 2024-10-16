@@ -45,11 +45,9 @@ $\mathscr{T}=\{X,\varnothing \} $
 
 #### 通常拓扑
 
-设 $X=\R^n $，则 $\mathscr{T}_u:=\{空集或 \R^n 中能表示为开球之并的子集 \} $
+设 $X=\R^n $，则 $\mathscr{T}_{\mathrm{u}}:=\{空集或 \R^n 中能表示为开球之并的子集 \} $ 称为 $\R^n $ 的通常拓扑（usual topology）。
 
-开球 $B(x_0,r):=\{x\in \R^n|~|x-x_0|<r \} $
-
-$x_0 $ 称为球心，$r>0 $ 称为半径。
+开球（open ball）定义为 $B(x_0,r):=\{x\in \R^n|~|x-x_0|<r \} $，$x_0 $ 称为球心，$r>0 $ 称为半径。
 
 在把 $\R^n $ 看作拓扑空间时，若无声明就是指 $(\R^n,\mathscr{T}) $
 
@@ -127,7 +125,7 @@ $$
 
 坐标系 $(O_\alpha,\psi_\alpha) $ 在数学上又称为图。满足 $n $ 维微分流形定义条件 (a)(b) 的全体图的集合 $\{(O_\alpha,\psi_\alpha) \} $ 称为图册。条件 (b) 又叫相容性条件。图册中任意两个图都是相容的。
 
-
+$f:M\to M' $ 称为 $\mathbb{C}^r $ 类映射，若 $\forall p\in M $，映射 $\psi'_\beta\circ f\circ \psi_\alpha^{-1} $ 对应的 n' 个 $n $ 元函数是 $\mathbb{C}^r $  类的。
 
 
 
