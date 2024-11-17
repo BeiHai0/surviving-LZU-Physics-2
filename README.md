@@ -1,5 +1,13 @@
 希望可以帮到大家。
 
+# 新电脑必备
+
+- Chrome ![]
+
+- 科学上网工具
+/
+- VScode
+
 # markdown 配置
 
 ## snippets
