@@ -2,11 +2,99 @@
 
 # 新电脑必备
 
-- Chrome ![]
+- [Chrome](https://www.google.cn/intl/zh-CN/chrome/)
 
-- 科学上网工具
-/
-- VScode
+- 科学上网工具（可以请教身边的同学）
+
+- [VScode](https://code.visualstudio.com/)
+
+- [git](https://git-scm.com/)：安装的时候若无特殊需求，一直“下一步”即可。
+
+## git 配置
+
+> 假设你已经有了远程库，但想在新电脑的某个文件夹中（以桌面为例）继续写东西并推送到远程库。
+
+- 桌面空白处鼠标右键
+
+- Open Git Bash here
+
+- 此时会打开 git bash，输入：
+
+```
+git config --global user.name "Your Name"
+```
+
+- 回车。再输入：
+
+```
+git config --global user.email "Your Email"
+```
+
+- 回车。
+
+注意把 "Your Name" 和 "your Email" 替换成你的名字和邮箱。
+
+> 下面就不提醒回车了。
+
+- 输入：
+
+```
+ssh-keygen -t rsa -b 4096 -C "Your Email"
+```
+
+注意把 "your Email" 替换成你的邮箱。
+
+如无特殊需求，接下来：
+
+- 回车。
+
+- 回车。
+
+- 回车。
+
+这样就生成了 SSH 密钥。
+
+- 此电脑 $\to $ OS(C:) $\to  $ 用户 $\to $ 你的用户名 $\to $ .ssh 文件夹 $\to $ id_rsa PUB 文件 $\to $ 右击，打开方式选择“记事本打开” $\to $ 键盘上 Ctrl + A，Ctrl + C 复制
+
+- 到 github 官网找到你的远程仓库。
+
+- Setting $\to $ Deploy Keys $\to $ Add deploy key
+
+- "Title" 自己取，在 "Key" 中键盘上按 Ctrl + V 把你刚刚复制的东西粘贴进去。
+
+- 勾选 "Allow write access"
+
+- 点击 "Add key"
+
+这样就可以往远程仓库推送东西了。
+
+- 点击 <>Code
+
+- 点击绿色的 <>Code
+
+- 把你的远程仓库的 SSH 地址复制到剪贴板中
+
+- 回到 git bash，输入：
+
+```
+git clone YourURL
+```
+
+注意 YourURL 处可以右键 Paste 进行粘贴。 
+
+这样就把远程库克隆到本地了。
+
+现在可以在本地写东西，写完后：
+
+```
+git add .
+
+git commit -m"描述"
+
+git push origin master
+```
+
+就可以把本地的提交推送到远程仓库了。
 
 # markdown 配置
 
@@ -47,7 +135,7 @@
 
 - Snippets
 
-- 
+- 搜索栏中搜索 markdown.json 并打开。
 
 ## 个人惯用 markdown snippets
 
@@ -56,6 +144,8 @@
 所有连续出现两个 “\” 的地方，第一个 “\” 起转义作用
 
 在行内或行间公式使用的 snippets 不能把 scope 设置为 markdown。scope 那行直接删掉或注释掉即可。
+
+下面是个人惯用 snippets，可以参考。
 
 ```
 {
