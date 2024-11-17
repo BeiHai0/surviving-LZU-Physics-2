@@ -10,6 +10,35 @@
 
 # markdown 配置
 
+## settings.json文件
+
+- 打开 VScode
+
+- 点击左下角齿轮图标
+
+- Settings
+
+- 点击右上角纸张翻页图标（open settings）打开 settings.json 文件。
+
+下面是个人习惯的配置，可以参考。
+
+```
+{
+    "workbench.colorTheme": "Visual Studio Light",
+    "[markdown]": {
+        "editor.unicodeHighlight.nonBasicASCII": false,
+        "editor.formatOnSave": true,
+        "editor.renderWhitespace": "all",
+        "editor.wordWrap": "on",
+        "editor.quickSuggestions": {
+        "strings": false,
+        "comments": false,
+        "other": false
+        }
+    },
+}
+```
+
 ## snippets
 
 - 打开VScode
