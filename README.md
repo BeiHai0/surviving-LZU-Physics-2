@@ -1,40 +1,16 @@
 希望可以帮到大家。
 
-# 好文推荐
-
-## 统计力学
-
-[笔记 by WSLY](https://zhuanlan.zhihu.com/p/348728397)
-
-[热力学知识点](https://zhuanlan.zhihu.com/p/69562371)
-
-## 分析力学
-
-[欧拉-拉格朗日方程推导](https://zhuanlan.zhihu.com/p/212584938)
-
-[受周期性驱动力有阻尼一维谐振子](https://zhuanlan.zhihu.com/p/135856012)
-
-[弹簧摆](https://zhuanlan.zhihu.com/p/664522639)
-
-[带电粒子的E-L方程在电磁场规范变换下具有不变性](https://www.zhihu.com/question/552502390/answer/2666510475)
-
-[单摆](https://zhuanlan.zhihu.com/p/68606317)
-
-[“相空间”和“相流体”1](https://zhuanlan.zhihu.com/p/394303895)
-
-[“相空间”和“相流体”2](https://zhuanlan.zhihu.com/p/394637504)
-
-## 数理方法
-
-[一致收敛和逐点收敛](https://wuli.wiki/online/UniCnv.html)
-
-## 量纲
-
-[自然单位制?](https://physics.stackexchange.com/questions/102527/how-can-planck-units-be-consistent-with-conflicting-dimensions-of-mass)
-
 # markdown 配置
 
 ## snippets
+
+- 打开VScode
+
+- 点击左下角齿轮图标
+
+- Snippets
+
+- 
 
 ## 个人惯用 markdown snippets
 
@@ -63,28 +39,28 @@
 	// 	"description": "Log output to console"
 	// }
 
-	"行间公式": {
-		"scope":"markdown",
+	"$$ $$": {
+		//"scope":"markdown",
 		"prefix":".m",
 		"body":[
 			"$$",
 			"$0",
 			"$$"
 		],
-		"description":"行间公式"
+		"description":"$$ $$"
 	},
 
-	"行内公式": {
+	"$ $": {
 		"scope":"markdown",
 		"prefix":".i",
 		"body":[
 			"$$0 $"
 		],
-		"description":"行内公式"
+		"description":"$ $"
 	},
 
 	"Aligned":{
-		"scope":"markdown",
+		//"scope":"markdown",
 		"prefix":".ali",
 		"body":[
 			"$$",
@@ -153,11 +129,20 @@
 
 	"Longrightarrow": {
 		//"scope":"markdown",
-		"prefix":".lra",
+		"prefix":".Lra",
 		"body":[
 			"\\Longrightarrow"
 		],
 		"description":"Longrightarrow"
+	},
+
+	"longrightarrow": {
+		//"scope":"markdown",
+		"prefix":".lra",
+		"body":[
+			"\\longrightarrow"
+		],
+		"description":"longrightarrow"
 	},
 
 	"varepsilon": {
@@ -167,24 +152,6 @@
 			"\\varepsilon"
 		],
 		"description":"varepsilon"
-	},
-
-	"Bigg[]": {
-		// "scope":"markdown",
-		"prefix":".b[",
-		"body":[
-			"\\bigg[ $1 \\bigg] $0"
-		],
-		"description":"Bigg[]"
-	},
-
-	"Bigg()": {
-		// "scope":"markdown",
-		"prefix":".b(",
-		"body":[
-			"\\bigg( $1 \\bigg) $0"
-		],
-		"description":"Bigg[]"
 	},
 
 	"Bigg Vertical Line": {
@@ -282,7 +249,7 @@
 		//"scope":"markdown",
 		"prefix":".ps",
 		"body":[
-			"\\{$0 \\\\}"
+			"\\left\\{$0 \\right\\\\}$1"
 		],
 		"description":"ps"
 	},
@@ -300,18 +267,63 @@
 		//"scope":"markdown",
 		"prefix":".mr",
 		"body":[
-			"\\mathop{=}\\limits^{$1 }$2"
+			"\\xlongequal{$1 } $2"
 		],
-		"description":"某一表象下的矩阵表示"
+		"description":"矩阵表示"
 	},
 
-	"big ps": {
+	"empty set": {
 		//"scope":"markdown",
-		"prefix":".bps",
+		"prefix":".vn",
 		"body":[
-			"\\bigg\\{$1 \\bigg\\\\} $2"
+			"\\varnothing"
 		],
-		"description":"big ps"
+		"description":"empty set"
+	},
+	
+	"()": {
+		//"scope":"markdown",
+		"prefix":".p",
+		"body":[
+			"\\left($1 \\right)$2"
+		],
+		"description":"()"
+	},
+
+	"frac": {
+		//"scope":"markdown",
+		"prefix":".f",
+		"body":[
+			"\\frac{$1 }{$2 } $3"
+		],
+		"description":"frac"
+	},
+
+	"longleftrightarrow": {
+		//"scope":"markdown",
+		"prefix":".llra",
+		"body":[
+			"\\longleftrightarrow"
+		],
+		"description":"longleftrightarrow"
+	},
+
+	"abs": {
+		//"scope":"markdown",
+		"prefix":".abs",
+		"body":[
+			"\\left|$1 \\right|$2"
+		],
+		"description":"abs"
+	},
+
+	"[]": {
+		//"scope":"markdown",
+		"prefix":".[",
+		"body":[
+			"\\left[$1 \\right]$2"
+		],
+		"description":"[]"
 	},
 
 	"": {
@@ -322,7 +334,6 @@
 		],
 		"description":""
 	},
-	
 
 }
 ```
