@@ -10,6 +10,12 @@
 
 - [git](https://git-scm.com/)：安装的时候若无特殊需求，一直“下一步”即可。
 
+- [百度网盘](https://pan.baidu.com/download#win)：虽然特别恶心，但没办法。
+
+- [Mathematica](https://tiebamma.github.io/InstallTutorial/)：有能力的话请支持正版。
+
+- [Anaconda](https://www.anaconda.com/download/success)
+
 ## git 配置
 
 > 假设你已经有了远程库，但想在新电脑的某个文件夹中（以桌面为例）继续写东西并推送到远程库。
