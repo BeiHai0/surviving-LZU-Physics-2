@@ -141,7 +141,7 @@ git push origin master
 
 - Snippets
 
-- 搜索栏中搜索 markdown.json 并打开。
+- New Global Snippets Profile
 
 ## 个人惯用 markdown snippets
 
