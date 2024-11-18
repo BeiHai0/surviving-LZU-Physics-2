@@ -382,7 +382,7 @@ git push origin master
 		//"scope":"markdown",
 		"prefix":".ps",
 		"body":[
-			"\\left\\{$0 \\right\\\\}$1"
+			"\\left\\{$1 \\right\\\\}$2"
 		],
 		"description":"ps"
 	},
