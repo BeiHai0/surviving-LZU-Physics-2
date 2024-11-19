@@ -16,6 +16,8 @@
 
 - [Anaconda](https://www.anaconda.com/download/success)
 
+- [Office](http://msweb.lzu.edu.cn/download/office2021.html)
+
 ## git 配置
 
 > 假设你已经有了远程库，但想在新电脑的某个文件夹中（以桌面为例）继续写东西并推送到远程库。
