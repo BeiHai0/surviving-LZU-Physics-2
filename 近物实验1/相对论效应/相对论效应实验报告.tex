@@ -1,4 +1,4 @@
-%% ****** Start of file apstemplate.tex ****** %
+ %% ****** Start of file apstemplate.tex ****** %
 %%
 %%
 %%   This file is part of the APS files in the REVTeX 4.2 distribution.
@@ -23,6 +23,7 @@
 \documentclass[aps,prl,preprint,groupedaddress]{revtex4-2}
 \usepackage[UTF8]{ctex}
 \usepackage{graphicx}
+\usepackage{float}
 %\documentclass[aps,prl,preprint,superscriptaddress]{revtex4-2}
 %\documentclass[aps,prl,reprint,groupedaddress]{revtex4-2}
 
@@ -72,7 +73,7 @@
 
 \begin{abstract}
 % insert abstract here
-本实验通过测量高速运动电子的动量和能量来验证狭义相对论的动量和能量关系。通过本次实验可以简单了解半聚焦磁谱仪的原理与应用，掌握 $\gamma-\beta $ 闪烁谱仪以及多道脉冲器的应用并通过数据处理及计算机软件绘图提高实验研究的基本能力。
+本实验通过测量高速运动电子的动量和动能来验证狭义相对论的动量和动能关系。通过本次实验可以简单了解半聚焦磁谱仪的原理与应用，掌握 $\gamma-\beta $ 闪烁谱仪以及多道脉冲器的应用并通过数据处理及计算机软件绘图提高实验研究的基本能力。
 
 \end{abstract}
 
@@ -199,11 +200,11 @@ $$
 
 \subsection{A. 实验结果和数据处理}
 
-放射源位置 $x_0=9.50\mathrm{cm}$，磁场强度 $B=740\mathrm{Gs}$
+放射源位置 $x_0=9.50\mathrm{cm}$，磁场强度 $B=740\mathrm{G}$
 
-\begin{table}[htbp] % [htbp] 表示表格的浮动位置
+\begin{table}[H] % [htbp] 表示表格的浮动位置
 	\centering % 使表格居中
-	\caption{能量定标} % 表格标题
+	\caption{探测器位置与道数关系} % 表格标题
 	\begin{tabular}{|c|c|c|c|c|c|c|} % 定义表格和对齐方式
 	\hline % 顶部线条
 	探测器位置 $x$ ($\mathrm{cm}$) &34.90  &32.40 &30.00 &27.50 &24.00 &22.00  \\ % 第一行内容
@@ -215,29 +216,30 @@ $$
 
 根据 $p=eB(x-x_0)/2,E_k=a+b\times\mathrm{CH}$ 可得：
 
-\begin{table}[htbp] % [htbp] 表示表格的 浮动位置
+\begin{table}[H] % [htbp] 表示表格的 浮动位置
 	\centering % 使表格居中
-	\caption{能量定标} % 表格标题
+	\caption{动能与动量关系} % 表格标题
 	\begin{tabular}{|c|c|c|c|c|c|c|} % 定义表格和对齐方式
 	\hline % 顶部线条
-	动量 $p$ ($\mathrm{cm}$) &34.90  &32.40 &30.00 &27.50 &24.00 &22.00  \\ % 第一行内容
+	$pc$ ($\mathrm{MeV}$) &2.8149  &2.5419 &2.2755 &1.9980 &1.6095 &1.3875  \\ % 第一行内容
 	\hline % 水平线条
-	动能 $E_k$ $\mathrm{MeV }$ &995 &809 &581 &435 &335 &237\\ % 第二行内容
+	动能 $E_k$ ($\mathrm{MeV }$) &0.8642 &0.7241 &0.5525 &0.4426 &0.3673 &0.2935\\ % 第二行内容
 	\hline % 底部线条
 	\end{tabular}
 \end{table}
 
-\subsection{B. 误差分析}
+采用 $pc $ 而非 $p$ 作为横坐标，是为了使动能 $E_k$ 与 $pc$ 的数值在 数量级上相差不大。且  $E_k$ 与 $pc$ 有相同量纲，更便于分析二者关系。
 
-在铁磁物质内部，电子轨道磁矩处于“冻结”状态，基本上不贡献磁矩，因此朗德因子理论值 $g'\approx 2$。而实验测得的朗德因子 $g=1.78$ 与理论值有 $11.00\%$ 的相对误差，这可能来源于：
-
-(1)样品未放置在磁场均匀处。
-
-(2)铁磁共振吸收曲线中间部分的采样点过少，因此共振磁场 $B_r$ 的测量误差较大。
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{img/1.png}
+    \caption{Ek与pc关系图}
+    \label{1}
+\end{figure}
 
 \section{IV. 结论}
 
-	本实验绘制了铁磁共振曲线，测得朗德因子 $g=1.78$，共振磁场 $B_r=0.3837\mathrm{T}$，线宽 $\Delta B=8.16\times 10^{-3}~\mathrm{T}$。
+本实验通过测量高速运动电子的动量和动能来验证狭义相对论的动量和动能关系。将所测数据点分别与经典的动量-动能关系和相对论的动量-动能关系的线型进行对比，验证了高速运动的电子的动量-动能关系服从相对论的动量-动能关系。
 
 % If in two-column mode, this environment will change to single-column
 % format so that long equations can be displayed. Use
