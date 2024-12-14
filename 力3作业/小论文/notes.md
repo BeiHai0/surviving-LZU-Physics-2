@@ -61,15 +61,58 @@ $$
 
 ## Single-Spin-Flip-Dynamics
 
-Single-Spin-Flip-Dynamics 是一个马尔可夫过程。
+Single-Spin-Flip-Dynamics 是一个马尔可夫过程。在热平衡时，整个系统的能量只会有小幅度的扰动，这点促成了在演算时采用单一自旋反转法进行计算，也就是说每次系统转换其状态时，只改变其中一个自旋的方向。
 
-首先要选定一个选择几率 $g(i,j) $，代表
+首先要选定一个选择几率 $g(i,j) $，表示当系统处于状态 $i $ 时，在所有可能的状态中选择状态 $j $ 的概率。
+
+另外还需要定义一个接受几率 $A(i,j) $，表示当系统处于状态 $i $ 时，接受系统跳转到状态 $j $ 的概率。
+
+设共有 $N $ 个格点，对于任何一个状态 $i $，它以相同概率选择 $N $ 个格点中的一个。因此选择几率满足：
+
+$$
+g(i,j)
+=\frac{1 }{N } 
+$$
+
+若要满足细致平衡条件，则有：
+
+$$
+\frac{P_{i\to j} }{P_{j\to i} }
+=\frac{g(i,j)A(i,j) }{g(j,i)A(j,i) }
+=\frac{A(i,j) }{A(j,i) }
+=\frac{P_\beta(j) }{P_\beta(i) }
+=\frac{\mathrm{e}^{-\beta H_j}/Z }{\mathrm{e}^{-\beta H_i}/Z } 
+=\mathrm{e}^{-\beta \left(H_j - H_i \right)}
+$$
+
+即接受几率满足：
+
+$$
+\frac{A(i,j) }{A(j,i) } 
+=\mathrm{e}^{-\beta\left( H_j - H_i \right)}
+$$
+
+$$
+A(i,j)
+=\begin{cases}
+\mathrm{e}^{-\beta\left(H_j-H_i \right)}&,\quad H_j-H_i>0 \\
+1 &,\quad \mathrm{otherwise.}
+\end{cases}
+$$
+
+
 
 这个过程具体如下：
 
-（1）从系统中随机选取一个格点
+（1）以 $g(i,j)=1/N $ 的选择几率选出一个自旋，并计算所有与其相关的能量贡献。
 
-（2）
+（2）反转其自旋，再计算一次所有和它相关的能量贡献。
+
+（3）如果其能量贡献下降，保持自旋反转。
+
+（4）如果贡献能量上升，则令自旋以 $ \mathrm{e}^{-\beta\left(H_j-H_i \right)} $ 的概率反转。
+
+（5）重复步骤一。
 
 # Metropolis–Hastings算法
 
