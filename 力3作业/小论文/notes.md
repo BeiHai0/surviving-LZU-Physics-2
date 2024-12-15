@@ -60,7 +60,9 @@ $$
 \approx \frac{\sum\limits_{i=1}^{M} Q\left(\tilde{\sigma}_i \right) }{M } 
 $$
 
-# 马尔可夫链
+# 马尔可夫过程
+
+马尔可夫过程是一个具备了马尔可夫性质的随机过程，因为俄国数学家安德雷·马尔可夫得名。马尔可夫过程是不具备记忆特质的。换言之，马尔可夫过程的条件概率仅仅与系统的当前状态相关，而与它的过去历史或未来状态，都是独立、不相关的。
 
 马尔可夫链是满足马尔可夫性质的随机变量序列 $X_1, X_2, X_3,\cdots $，某一个状态 $X_{n+1} $ 仅与前一个状态 $X_n $ 有关，即：
 
@@ -69,66 +71,67 @@ $$
 =\mathrm{P}\left(X_{n+1}=x | X_n = x_n \right)
 $$
 
-我们用 $P_{i\to j} $ 表示系统从状态 $i $ 转移到状态 $j $ 的概率。
-
 ## 稳态分布
 
-对于一个“好”的马尔可夫过程，无论初始状态是什么，只要经历足够多的步数，末态的概率分布是确定的。这个末状态称为稳态。我们用稳态概率密度分布 $P(i) $ 来表示稳态时系统处于状态 $i $ 的概率。
+我们用 $P_{\mu\to \nu} $ 表示系统从状态 $\mu $ 转移到状态 $\nu $ 的概率。
 
-一个“好”的马尔可夫过程要满足以下两个条件：
+对于一个“好”马尔可夫过程，无论初始状态是什么，只要经历足够多的步数，末态的概率分布是确定的，这个末状态称为稳态。
+
+我们用稳态概率分布（简称稳态分布） $P(\mu) $ 来表示稳态时系统处于状态 $\mu $ 的概率。
+
+一个“好”马尔可夫过程要满足以下两个条件：
 
 （1）遍历性：无论从哪个状态出发，都能找到一条概率不为零的路径达到任意状态。
 
-（2）细致平衡：稳态概率密度分布和转移概率满足：
+（2）细致平衡：稳态概率分布和转移概率满足：
 
 $$
-P(i)P_{i\to j} = P(j) P_{j\to i}
+P(\mu)P_{\mu\to \nu} = P(\nu) P_{\nu\to \mu}
 $$
 
 ## 马尔可夫过程
 
 我们希望对位形 $\sigma $ 以概率 $P(\sigma)\propto \mathrm{e}^{-\beta H(\sigma)} $ 进行重要性抽样。这可以通过“好”的马尔可夫过程实现。
 
-我们可以构造一个特殊的、“好”的马尔可夫过程，使得其稳态关于位形 $\sigma $ 的稳态概率密度分布 $P(\sigma) $ 满足 $P(\sigma)\propto \mathrm{e}^{-\beta H(\sigma)} $
+我们可以构造一个特殊的、“好”的马尔可夫过程，使得其稳态关于位形 $\sigma $ 的稳态分布 $P(\sigma) $ 满足 $P(\sigma)\propto \mathrm{e}^{-\beta H(\sigma)} $，这样就实现了对位形 $\sigma $ 以概率 $P(\sigma)\propto \mathrm{e}^{-\beta H(\sigma)} $ 进行重要性抽样。
 
 ## Single-Spin-Flip-Dynamics
 
-Single-Spin-Flip-Dynamics 是一个“好”的马尔可夫过程。在热平衡时，整个系统的能量只会有小幅度的扰动，这点促成了在演算时采用单一自旋反转法进行计算，也就是说每次系统转换其状态时，只改变其中一个自旋的方向。
+Single-Spin-Flip-Dynamics 是一个“好”的马尔可夫过程。在热平衡时，整个 Ising 系统的能量只会有小幅度的扰动，这点促成了在演算时采用单一自旋反转法进行计算，也就是说每次系统转换其状态时，只改变其中一个自旋的方向。
 
-首先要选定一个选择几率 $g(i,j) $，表示当系统处于状态 $i $ 时，在所有可能的状态中选择状态 $j $ 的概率。
+首先要选定一个选择几率 $g(\mu,\nu) $，表示当系统处于状态 $\mu $ 时，在所有可能的状态中选择状态 $j $ 的概率。
 
-另外还需要定义一个接受几率 $A(i,j) $，表示当系统处于状态 $i $ 时，接受系统跳转到状态 $j $ 的概率。
+另外还需要定义一个接受几率 $A(\mu,\nu) $，表示当系统处于状态 $\mu $ 时，接受系统跳转到状态 $\nu $ 的概率。
 
-可以看到，$g(i,j)A(i,j) $ 就是马尔可夫过程中的转移概率 $P_{i\to j} $，即：
+可以看到，$g(\mu,\nu)A(\mu,\nu) $ 就是马尔可夫过程中的转移概率 $P_{\mu\to \nu} $，即：
 
 $$
-P_{i\to j} = g(i,j)A(i,j)
+P_{\mu\to \nu} = g(\mu,\nu)A(\mu,\nu)
 $$
 
 一个“好”的马尔可夫过程应满足细致平衡条件，即有：
 
-
 $$
-P(i)P_{i\to j} = P(j) P_{j\to i}
+P(\mu)P_{\mu\to \nu} = P(\nu) P_{\nu\to \mu}
 $$
 
 于是：
 
 $$
-P(i)g(i,j)A(i,j) = P(j)g(j,i)A(j,i)
+P(\mu)g(\mu,\nu)A(\mu,\nu) = P(\nu)g(\nu,\mu)A(\nu,\mu)
 $$
 
-由于我们一次只翻转一个自旋。一次自旋翻转就是一次位形跳转。因此，当位形 $i $ 和位形 $j $ 不满足“仅有一个方向不同的自旋”这一条件时，我们拒绝从位形 $i $ 跳转到位形 $j $，即：
+由于我们一次只翻转一个自旋，即位形跳转前后的位形仅有一个方向不同的自旋。因此，当位形 $\mu $ 和位形 $\nu $ 不满足“仅有一个方向不同的自旋”这一条件时，我们拒绝从位形 $\mu $ 跳转到位形 $\nu $，即：
 
 $$
-A(i,j)= 0 ,\quad 位形 i 和位形 j 不满足“仅有一个方向不同的自旋”
+P_{\mu\to \nu}= 0 ,\quad 位形 i 和位形 j 不满足“仅有一个方向不同的自旋”
 $$
 
-**下面考虑位形 $i $ 和 位形 $j $ 仅有一个方向不同的自旋的情况。**
+**下面考虑位形 $\mu $ 和 位形 $\nu $ 仅有一个方向不同的自旋的情况。**
 
 设共有 $N $ 个格点。
 
-为简单起见，对于任何一个状态 $i $，认为它以相同概率选择 $N $ 个格点中的一个进行自旋翻转，即选择几率满足：
+为简单起见，对于任何一个状态 $\mu $，认为它以相同概率选择 $N $ 个格点中的一个进行自旋翻转，即人为规定选择几率满足：
 
 $$
 g(i,j)
@@ -169,7 +172,7 @@ $$
 =\frac{P_{j\to i} }{P_{i\to j} } 
 $$
 
-注意到，我们希望稳态概率密度分布满足 $P(i)\propto \mathrm{e}^{-\beta H(i)},P(j)\propto \mathrm{e}^{-\beta H(j)} $，因此有：
+注意到，我们希望稳态分布满足 $P(i)\propto \mathrm{e}^{-\beta H(i)},P(j)\propto \mathrm{e}^{-\beta H(j)} $，因此有：
 
 $$
 \frac{P(i) }{P(j) } 
@@ -183,33 +186,138 @@ $$
 \frac{A(i,j) }{A(j,i) } = \mathrm{e}^{-\beta \left[H(j)-H(i) \right]}
 $$
 
-
+接受概率的一种可能取法是 Metropolis 接受准则，即如下的接受概率：
 
 $$
 A(i,j)
 =\begin{cases}
-\mathrm{e}^{-\beta\left(H_j-H_i \right)}&,\quad H_j-H_i>0 \\
+\mathrm{e}^{-\beta\left(H(j)-H(i) \right)}&,\quad H_j-H_i>0 \\
 1 &,\quad \mathrm{otherwise.}
 \end{cases}
 $$
 
+Single-Spin-Flip-DynamicsCluster-flip-Dynamics 方法稳态时重要性抽样的具体步骤如下：
 
+（1）以 $1/N $ 的选择概率选出一个自旋，并计算自旋翻转前后能量差 $H(\nu)-H(\mu) $；
 
-这个过程具体如下：
+（2）如果能量差 $H(\nu)-H(\mu)\leqslant 0 $，翻转选择的自旋；
 
-（1）以 $g(i,j)=1/N $ 的选择几率选出一个自旋，并计算所有与其相关的能量贡献。
+（3）如果能量差 $H(\nu)-H(\mu)> 0 $，则以 $ \mathrm{e}^{-\beta\left(H_j-H_i \right)} $ 的概率翻转选择的自旋；
 
-（2）反转其自旋，再计算一次所有和它相关的能量贡献。
+（4）记录当前位形下热力学量的取值；
 
-（3）如果其能量贡献下降，保持自旋反转。
+（5）重复步骤（1）。
 
-（4）如果贡献能量上升，则令自旋以 $ \mathrm{e}^{-\beta\left(H_j-H_i \right)} $ 的概率反转。
+##  Cluster-flip-Dynamics
 
-（5）重复步骤一。
+与 Single-Spin-Flip-Dynamics 方法单步翻转单个自旋不同，Cluster-flip-Dynamics 方法单步会翻转多个自旋。每次被翻转的自旋簇称为 cluster.
 
-# Metropolis–Hastings算法
+Cluster-flip-Dynamics 方法稳态时重要性抽样的具体步骤如下：
 
+（1）在系统中随机抽取一个自旋作为种子；
 
+（2）以 $\mathrm{P}_{\mathrm{add}} $ 的概率依次决定是否添加种子周围的同向自旋到 cluster中；
 
+（3）把原来的种子标记为 operated，把新加入的自旋作为新的种子；
 
-# 
+（4）重复步骤（2）（3），直到 cluster 中所有的自旋都被标记为 operated，即不再有新的种子；
+
+（5）以 $A_{\mu,\nu} $ 的概率翻转 cluster.
+
+（6）记录当前位形下热力学量的取值。
+
+（7）重复步骤（1）。
+
+## Wolff 算法
+
+这里，我们仍需要构造“好”的马尔可夫过程，因此仍要满足细致平衡条件。
+
+当前系统的位形记为 $\mu $，设 cluster-flip 把位形 $\mu $ 中一个自旋为 $\sigma $ 的 cluster 全部翻转为 $-\sigma $，设最近邻包围被翻转的 cluster 的所有自旋中自旋为 $\sigma $ 的有 $m $ 个，自旋为 $-\sigma $ 的有 $n $ 个，则系统处于位形 $\mu $ 时选择位形 $\nu $ 的选择概率 $g(\mu,\nu) $ 可以人为规定为：
+
+$$
+g(\mu,\nu) = \left(1-\mathrm{P}_{\mathrm{add}} \right)^m
+$$
+
+容易得到：
+
+$$
+g(\nu,\mu) = \left(1-\mathrm{P}_{\mathrm{add}} \right)^n
+$$
+
+因此：
+
+$$
+\frac{g(\mu,\nu) }{g(\nu,\mu) } = \frac{\left(1-\mathrm{P}_{\mathrm{add}} \right)^m }{\left(1-\mathrm{P}_{\mathrm{add}} \right)^n} 
+=\left(1-\mathrm{P}_{\mathrm{add}} \right)^{m-n}
+$$
+
+细致平衡条件：
+
+$$
+P(\mu) g(\mu,\nu) A(\mu,\nu) = P(\nu) g(\nu,\mu) A(\nu,\mu)
+$$
+
+我们希望稳态分布满足：
+
+$$
+P(\mu) \propto \mathrm{e}^{-\beta H(\mu)},\quad 
+P(\nu) \propto \mathrm{e}^{-\beta H(\nu)}
+$$
+
+因此：
+
+$$
+\frac{P(\mu) }{P(\nu) } = \mathrm{e}^{-\beta \left[H(\mu)-H(\nu) \right]}
+$$
+
+把概率密度分布和选择概率代入细致平衡条件，可得：
+
+$$
+\frac{A(\mu,\nu) }{A(\nu,\mu) } 
+=\frac{P(\nu) }{P(\mu) } \frac{g(\nu,\mu) }{g(\mu,\nu) } 
+=\mathrm{e}^{-\beta\left[H(\nu)-H(\mu) \right]} \left(1-\mathrm{P_{add}} \right)^{n-m}
+$$
+
+注意到：
+
+$$
+\begin{aligned}
+H(\nu)-H(\mu)
+&=-J\left\{\left[m\cdot\sigma\cdot\left(-\sigma \right) + n\cdot \left(-\sigma \right)\cdot\left(-\sigma \right) \right] - \left[m\cdot \sigma\cdot\sigma + n\cdot\left(-\sigma \right)\cdot\left(\sigma \right) \right] \right\} \\
+&=2(m-n)J
+\end{aligned}
+$$
+
+因此，接受概率要满足：
+
+$$
+\frac{A(\mu,\nu) }{A(\nu,\mu) } 
+=\mathrm{e}^{-2\beta (m-n)J}\left(1-\mathrm{P_{add}} \right)^{n-m}
+$$
+
+特别地，若把 $\mathrm{P}_{\mathrm{add}} $ 取为：
+
+$$
+\mathrm{P_{add}}
+=1-\mathrm{e}^{-2\beta J}
+$$
+
+则接受概率要满足：
+
+$$
+\frac{A(\mu,\nu) }{A(\nu,\mu) } 
+=\mathrm{e}^{-2\beta (m-n)J}\cdot \mathrm{e}^{-2\beta J(n-m)}
+=1
+$$
+
+因此，一种简单的接受概率取法就是：
+
+$$
+A(\mu,\nu)
+=1
+$$
+
+即只要构造出了 cluster 就对其进行翻转。
+
+在使用 Wolff 算法使 Ising 系统达到稳态后对系统进行重要性抽样，如此可得热力学量的系综平均值。
+
