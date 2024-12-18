@@ -219,10 +219,113 @@ $$
 
 $$
 T_{\mu\nu}^H
-=\eta_{\mu\nu}L(F) - L_FF_\mu^\alpha F_{\nu\alpha}
+=\eta_{\mu\nu}L(F) - L_FF_\mu^\alpha F_{\nu\alpha} \tag{26}
 $$
 
-    
+电能密度
+
+$$
+\rho
+=-T_t^t
+=-L_FE^2-L(F)
+=\frac{\gamma E^2\left[1+\frac{3 }{2 } \eta E^2 \left(4+\frac{\eta }{2 } E^2 \right) \right] }{2\left(1-\frac{\eta }{2 } E^2 \right)^3 } \tag{27}
+$$
+
+总电能
+
+$$
+\epsilon
+=4\pi\int_{0}^{+\infty} \rho(r)r^2\mathrm{d}r \tag{28}
+$$
+
+转化为对 $E $ 的积分
+
+$$
+\epsilon
+=\frac{e^{3/2} }{\sqrt{4\pi\gamma} } \int_{0}^{\sqrt{\frac{2 }{\eta  } }} \frac{\sqrt{\left(2-\eta E^2 \right)\left[4+3\eta E^2\left(8+\eta E^2 \right) \right]\left[4+\eta E^2\left(52+21\eta E^2 \right) \right]} }{16\sqrt{E}\left(2+7\eta E^2 \right)^{5/2} } \mathrm{d}E \tag{29}
+$$
+
+总能量有限
+
+### 真空双折射(vacuum birefringence)
+
+考虑平面电磁波 $(\vec{e},\vec{b}) $ 沿 $z $ 轴在两片平行电容板间传播，$x $ 轴方向有匀强电场。外电场 $\bar{\vec{E}}=(\bar{E},0,0) $，总电场 $\vec{E}=\vec{e}+\bar{\vec{E}},\vec{B}=\vec{b} $，设 $\vec{e} $ 远小于 $\bar{\vec{E}} $，(6) 拉氏量
+
+$$
+L\left(\vec{e}+\bar{\vec{E}},\vec{b} \right)
+=\gamma\frac{\left\{\frac{3 }{2 } \eta\left[\vec{b}^2-\left(\vec{e}+\bar{\vec{E}} \right)^2 \right] - 1 \right\}\left[\vec{b}^2-\left(\vec{e}+\bar{\vec{E}} \right)^2 \right] }{2\left\{1+\frac{\eta }{2 } \left[\vec{b}^2-\left(\vec{e} + \bar{\vec{E}}^2 \right) \right] \right\}^2 } \tag{30}
+$$
+
+忽略高阶项
+
+$$
+L^{(2)}(\vec{e}+\bar{\vec{E}},\vec{b})
+=\frac{\gamma\eta\left(5+\frac{7 }{2 } \eta \bar{\vec{E}}^2 \right) }{\left(1-\frac{\eta }{2 } \bar{\vec{E}}^2 \right)^4 }\left(\vec{e}\cdot\bar{\vec{E}} \right)^2 - \frac{1 }{2 } \gamma \frac{\left(1+\frac{7 }{2 } \eta \bar{\vec{E}}^2 \right) }{\left(1-\frac{\eta }{2 } \bar{\vec{E}}^2 \right)^3 }\left(\vec{b}^2-\vec{e}^2 \right) \tag{31}
+$$
+
+电位移矢量和磁场强度
+
+$$
+d_i = \frac{\partial L^{(2)} }{\partial e_i } = \left(\alpha\delta_i^j+\beta\bar{E}_i\bar{E}^j \right)e_j,\quad
+h_i
+=-\frac{\partial L^{(2)} }{\partial b_i } 
+=\alpha\delta_i^j b_j \tag{32}
+$$
+
+$$
+\beta = \frac{2\gamma \eta\left(5+\frac{7 }{2 } \eta \bar{\vec{E}}^2 \right) }{\left(1-\frac{\eta }{2 } \bar{\vec{E}}^2 \right)^4 },\quad 
+\alpha = \gamma \frac{\left(1+\frac{7 }{2 }\eta\bar{\vec{E}}^2 \right)  }{\left(1-\frac{\eta }{2 } \bar{\vec{E}}^2 \right)^3 } \tag{33}
+$$
+
+关系 $d_i=\varepsilon_i^j e_j,h_i=\left(\mu^{-1} \right)_i^j b_j $
+
+$$
+\varepsilon_{ij} = \alpha\delta_{ij} + \beta\bar{E}_i\bar{E}_j ,\quad
+\left(\mu^{-1} \right)_{ij} = \alpha\delta_{ij} \tag{34}
+$$
+
+平面波麦克斯韦方程
+
+$$
+k_i d^i = k_i b^i = 0,\quad
+\vec{k}\times\vec{e} = \omega\vec{b},\quad
+\vec{k}\times\vec{h} = -\omega\vec{d} \tag{35}
+$$
+
+
+$$
+\left\{\varepsilon^{ijk}\varepsilon_{lmn} \left(\mu^{-1} \right)_k^l k_j k^m+\omega^2\epsilon_n^i \right\}e^n = 0
+$$
+
+$\varepsilon_{ijk} $ 是反对称张量。
+
+矩阵形式
+
+$$
+\Lambda \vec{e} = 0 \tag{37}
+$$
+
+$$
+\Lambda
+\equiv \begin{bmatrix}
+-k^2 \alpha+\omega^2\left(\alpha+\beta\bar{E} \right) &0 &0 \\
+0 &-k^2\alpha+\omega^2\alpha &0 \\
+0 &0 &\omega^2\alpha
+\end{bmatrix} \tag{38}
+$$
+
+电场有两种模式。两种模式定义了色散关系。
+
+$$
+n_\parallel = \sqrt{1+\frac{\beta }{\alpha } \bar{E}^2},\quad
+n_\perp = 1 \tag{39}
+$$
+
+折射率定义为 $n\equiv k/\omega $，不同偏振的电磁波有不同的速度 $v_\parallel=n_\parallel^{-1},v_\perp=1 $
+
+### 拉格朗日函数的因果关系和统一性条件
+
+
 
 
 
