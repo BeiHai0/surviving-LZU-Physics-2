@@ -45,6 +45,55 @@ $$
 
 > 证明当 $\alpha,\beta $ 为小量时，李群的结构因子 $f(\alpha,\beta)=\alpha+\beta $
 
+题目默认恒元对应的群参数的取值为 $0 $
+
+由于 $\alpha,\beta $ 是小量，因此结构因子可展为：
+
+$$
+\begin{aligned}
+f(\alpha,\beta)
+&=\frac{\partial f(\alpha,\beta) }{\partial \alpha}\bigg|_{\alpha,\beta=0} \alpha + \frac{\partial f(\alpha,\beta) }{\partial \beta }\bigg|_{\alpha,\beta=0} \beta \\
+&=\frac{\mathrm{d} f(\alpha,0) }{\mathrm{d}\alpha } \bigg|_{\alpha=0} \alpha + \frac{\mathrm{d} f(0,\beta) }{\mathrm{d} \beta }\bigg|_{\beta=0} \beta
+\end{aligned}
+$$
+
+李群的结构因子满足：
+
+$$
+g(f(\alpha,\beta))=g(\alpha)g(\beta)
+$$
+
+分别令 $\alpha,\beta $ 取 $0 $，结合恒元对应的群参数的取值为 $0 $，可得：
+
+$$
+g(f(0,\beta)) = g(\beta)
+$$
+
+$$
+g(f(\alpha,0)) = g(\alpha)
+$$
+
+因此：
+
+$$
+f(0,\beta) = \beta
+$$
+
+$$
+f(\alpha,0) = \alpha
+$$
+
+于是：
+
+$$
+\begin{aligned}
+f(\alpha,\beta)
+&=\frac{\mathrm{d} f(\alpha,0) }{\mathrm{d}\alpha } \bigg|_{\alpha=0} \alpha + \frac{\mathrm{d} f(0,\beta) }{\mathrm{d} \beta }\bigg|_{\beta=0} \beta \\
+&=\frac{\mathrm{d} \alpha }{\mathrm{d}\alpha } \bigg|_{\alpha=0} \alpha + \frac{\mathrm{d} \beta }{\mathrm{d} \beta }\bigg|_{\beta=0} \beta \\
+&=\alpha + \beta
+\end{aligned}
+$$
+
 ## 2
 
 > 给出同态的定义，并证明 $\mathrm{D}_3 $ 群与 $\mathrm{C}_2 $ 群同态。
