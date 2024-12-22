@@ -325,6 +325,399 @@ $$
 
 ### 拉格朗日函数的因果关系和统一性条件
 
+若拉氏量满足不等式：
+
+$$
+L_F \leqslant 0,
+L_{FF}\geqslant 0,
+L_F + 2F L_{FF} \leqslant 0\tag{40}
+$$
+
+则群速度不超过真空光速。
+
+$$
+L_F
+= ,
+L_{FF}
+= \tag{41}
+$$
+
+#### 电场部分
+
+$B=0 $
+
+$$
+n\geqslant m+1,a\leqslant 0,b\geqslant 0\tag{42}
+$$
+
+#### 磁场部分
+
+$$
+n\geqslant m+1,a\geqslant 0,b\leqslant 0\tag{43}
+$$
+
+#### $n=m+1,a=-3b $
+
+$$
+L_F
+=\frac{\gamma\left(-1+7\eta F \right) }{\left(1+\eta F \right)^3 },
+L_{FF}
+=\frac{2\gamma \eta\left(5-7\eta F \right) }{\left(1+\eta F \right)^4 } \tag{44} 
+$$
+
+第三不等式
+
+$$
+L_F + 2FL_{FF} 
+=\gamma \frac{-\eta F\left(26-21\eta F \right) }{\left(1+\eta F \right)^4 } \tag{45}
+$$
+
+仅电场 $B=0 $，因果和单一条件
+
+$$
+-\frac{2+7\eta E^2 }{\left(2-\eta E^2 \right)^3 } \leqslant 0,
+\frac{10+7\eta E^2 }{\left(2-\eta E^2 \right)^4 } \geqslant 0,
+\frac{-4-\eta E^2\left(521\eta E^2 \right) }{\left(2-\eta E^2 \right)^4 } \leqslant 0 \tag{46}
+$$
+
+
+所有情况都有 $E<\sqrt{2/\eta} $，$E_{\max}=\sqrt{\eta/2} $
+
+分析磁场
+
+$$
+\left(-1+\frac{7 }{2 } \eta B^2 \right)\leqslant 0,
+\left(5-\frac{7 }{2 } \eta B^2 \right)\geqslant 0 \tag{47}
+$$
+
+$F<1/7\eta $
+
+单一性条件
+
+$$
+-2+\eta B^2\left(26-\frac{21 }{2 } \eta B^2 \right)\leqslant 0\tag{48}
+$$
+
+$(13-2\sqrt{37})/21<\eta F<(13+2\sqrt{37})/21 $
+
+### 新 NLE 模型与 GR 耦合
+
+最小耦合拉氏量 $L(F) $
+
+$$
+I
+=\int \mathrm{d}^4 x\sqrt{-g}\left(\frac{R }{\kappa } + L(F) \right) \tag{49}
+$$
+
+$R $ Ricci scalar，运动方程
+
+
+
+$$
+\nabla_\mu\left(\frac{\partial L }{\partial F } F^{\mu\nu} \right)
+=0 \tag{50}
+$$
+
+$$
+R_{\mu\nu} - \frac{1 }{2 } g_{\mu\nu} R
+=\kappa T_{\mu\nu} \tag{51}
+$$
+
+$R_{\mu\nu} $ Ricci 张量，$T_{\mu\nu} $ Hilbert 能量-动量张量，在弯曲时空表为
+
+$$
+T_\mu^\nu
+=L\delta_\mu^\nu - L_F F_{\mu\lambda} F^{\nu \lambda} \tag{52}
+$$
+
+考虑球对称静态时空，线元
+
+$$
+\mathrm{d}s^2
+=-f(r)\mathrm{d}t^2 + \frac{1 }{f(r) } \mathrm{d}r^2 + r^2\left(\mathrm{d}\theta^2+\sin^2\theta\mathrm{d}\phi^2 \right) \tag{53}
+$$
+
+假设 $F_{tr},F_{\theta\phi} $ 在 $F_{\mu\nu} $ 非零，$F_{tr}=-F_{rt} $ 代表径向电场，$F_{\theta\phi}=-F_{\phi\theta} $ 代表径向磁场。stress 能动张量非零分量 in (52)
+
+$$
+T_t^t = T_r^r
+=L(F) - L_F F_{tr}F^{tr},
+T_\theta^\theta
+=T_\phi^\phi
+=L(F) - L_F F_{\theta\phi}F^{\theta\phi} \tag{54}
+$$
+
+只关注纯磁场解和纯电场解。
+
+#### the magnetic regular black hole solution
+
+纯磁场解来自 $F_{tr=0} $，非零麦克斯韦张量分量 $F_{\theta\phi}=-q_m \sin\theta $，$q_m $ 为常数，可理解为一个磁单极子的总荷量，导致径向磁场 $B_r=q_m/r^2 $，麦克斯韦不变量 $F=q_m^2/2r^4 $；$r=0 $ 处奇异
+
+
+
+magnetic monopole 能动张量
+
+$$
+T_t^t
+=T_r^r
+=\frac{\gamma q_m^2\left(3\eta q_m^2-2r^4 \right) }{\left(2r^4+\eta q_m^2 \right)^2 } \tag{55}
+$$
+
+$$
+T_\theta^\theta
+=T_\phi^\phi
+=\frac{\gamma q_m^2\left(4 r^8-2\eta q_m^2 r^4+3\eta^2q_m^4 \right) }{\left(2r^4+\eta q_m^2 \right)^3 } \tag{56}
+$$
+
+爱因斯坦张量
+
+$$
+G_\mu^\nu
+=\mathrm{diag}\left[\frac{f' }{r } + \frac{f-1 }{r^2 } ,\frac{f' }{r } + \frac{f-1 }{r^2 } , \frac{f'' }{2 } + \frac{f' }{r } , \frac{f'' }{2 } + \frac{f' }{r }  \right] \tag{57}
+$$
+
+$' $ 代表度规函数 $f(r) $ 的径向微分。$tt $ 或 $rr $ 分量
+
+$$
+\frac{f' }{r } ++ \frac{f-1 }{r^2 } 
+=\kappa \frac{\gamma q_m^2\left(3\eta q_m^2-2r^4 \right) }{\left(2r^4+\eta q_m^2 \right)^2 } \tag{58}
+$$
+
+解上面方程
+
+$$
+f(r)
+=1+\frac{c_0 }{r } + \frac{\kappa \gamma q_m^2 r^2 }{2r^4+\eta q_m^2 } \tag{59}
+$$
+
+$c_0 $ 是积分常数。
+
+选择
+
+$$
+c_0=0,
+\gamma=-\frac{2b_0^2 }{\kappa q_m^2} ,
+\eta=\frac{2g^4 }{q_m^2 } \tag{60}
+$$
+
+$b_0,g $ 是长度量纲常数。
+
+线元
+
+$$
+\mathrm{d}s^2
+=-\left(1-\frac{b_0^2r^2 }{r^4+g^4 }  \right)\mathrm{d}t^2 + \left(1-\frac{b_0^2r^2 }{r^4+g^4 }  \right)^{-1}\mathrm{d}r^2 + r^2\left(\mathrm{d}\theta^2+\sin^2\theta \mathrm{d}\phi^2 \right) \tag{61}
+$$
+
+$$
+g_{tt}\to -1,g_{rr}\to 1 \quad \mathrm{as}\quad r\to\infty
+$$
+
+$$
+g_{tt}\to -\left(1-c^2r^2 \right),\quad g^{rr} \to \left(1-c^2r^2 \right)\quad \mathrm{as}\quad r\to 0
+$$
+
+$c $ 是常数
+
+#### 曲率张量和不变量的正则性
+
+坐标基底，非零黎曼曲率张量分量
+
+$$
+R^0_{~~ 110} 
+=-\frac{b_0^2\left(3r^8 - 12 g^4 r^4 + g^8 \right) }{\left(r^4+g^4 \right)^3 } 
+$$
+
+$$
+R^0_{~~220} = R^0_{~~330} = R^2_{~~112} = R^3_{~~113}
+=\frac{b_0^2\left(r^4-g^4 \right) }{\left(r^4+g^4 \right)^2 } \tag{62}
+$$
+
+$$
+R^3_{~~223}
+=-\frac{b_0^2 }{r^4+g^4 } 
+$$
+
+非零 Ricci 张量分量
+
+$$
+R_{00} = -R_{11} = -\frac{b_0^2\left(r^8-12g^4r^4+3g^8 \right) }{\left(r^4+g^4 \right)^3 } 
+$$
+
+$$
+R_{22} = R{33} = \frac{b_0^2 \left(3g^4-r^4 \right) }{\left(r^4+g^4 \right)^2 } \tag{63}
+$$
+
+当 $r\to 0 $，两个张量的分量都有限；当 $r\to \infty $，所有分量趋于零。
+
+三个标量不变量：
+
+Ricci 张量
+
+$$
+R = g^{\mu\nu}R_{\mu\nu}
+=\frac{4b_0^2\left(3g^8-5g^4r^4 \right) }{\left(r^4+g^4 \right)^3 } \tag{64}
+$$
+
+Riccc contraction
+
+$$
+R_{\mu\nu} R^{\mu\nu}
+=\frac{4b_0^2 \left(r^{16}-14g^4r^{12}+74g^8r^8-30g^{12}r^4+9g^{16} \right) }{\left(r^4+g^4 \right)^6 } \tag{65}
+$$
+
+Kretschmann scalar
+
+$$
+K
+=R_{\mu\nu\lambda\delta} R^{\mu\nu\lambda\delta}
+=\frac{8\left(3g^{16}-10g^{12}r^4+74 g^8 r^8-34g^4r^{12}+7r^{16} \right)b_0^4 }{\left(r^4+g^4 \right)^6 } \tag{66}
+$$
+
+#### 能量情况
+
+定义 $\rho=-T_t^t,\tau=t_r^r,p=T_\theta^\theta=T_\phi^\phi $，利用 (55)(56)(60)
+
+$$
+\rho=-\tau
+=\frac{b_0^2\left(3g^4-r^4 \right) }{\kappa \left(r^4+g^4 \right)^2 } 
+$$
+
+$$
+p
+=-\frac{b_0^2\left(3g^8-12g^4r^4+r^8 \right) }{\kappa \left(r^4+g^4 \right)^3 } \tag{67}
+$$
+
+NEC (Nullu Energy Condition) $\rho+\tau \geqslant 0,\rho+p\geqslant 0 $，对一个在 $\rho+\tau=0 $ 自动满足；第二个
+
+$$
+\rho+p
+=\frac{2b_0^2 r^4\left(r^4-7g^4 \right) }{\kappa \left(r^4+g^4 \right)^3 } \tag{68}
+$$
+
+满足，只能 $r^4\leqslant 7g^4 $
+
+
+#### electric naked sigularity solution
+
+纯电解 $F_{\theta\phi=0} $
+
+能动张量
+
+
+$$
+T_t^t = T_r^r = L(F)-2F L_F
+=\frac{\gamma E^2\left[4+3\eta E^2\left(8+\eta E^2 \right) \right] }{\left(-2+\eta E^2 \right)^3 } \tag{69}
+$$
+
+
+$$
+T_\theta^\theta
+=T_\phi^\phi
+=L(F)
+=\frac{\gamma E^2\left(2+3\eta E^2 \right) }{\left(-2+\eta E^2 \right)^2 } \tag{70}
+$$
+
+替换 $F=-E^2/2 $
+
+爱因斯方程给出度规函数满足的方程
+
+$$
+\frac{f' }{r } + \frac{f-1 }{r^2 }
+=\frac{\gamma \kappa E^2\left[4+3\eta E^2\left(8+\eta E^2 \right) \right] }{\left(-2+\eta E^2 \right)^3 } 
+$$
+
+$$
+\frac{f'' }{2 } + \frac{f' }{2 } = \frac{\gamma \kappa E^2\left(2+3\eta E^2 \right) }{\left(-2+\eta E^2 \right)^2 } \tag{71}
+$$
+
+电场是 $r $ 的函数
+
+弱场极限 $\eta F\ll 1 $，展开
+
+$$
+f(r)
+=1+\frac{c }{r } \eta^0 f_{(0)} + \eta f_{(1)} + \eta^2 f_{(2)} + \mathcal{O}\left(\eta^3 \right) \tag{72}
+$$
+
+$1+c/r $ 是爱因斯坦方程的真空解。
+
+$$
+\frac{f''_{(0)} }{2 } + \frac{f'_{(0)} }{r } = \frac{\gamma \kappa }{2 } E_{(0)}^{2} \tag{73}
+$$
+
+$$
+\frac{f_{(1)}'' }{2 }  + \frac{f_{(1)}' }{r } = \frac{\gamma \kappa  }{2 } \left(2E_{(0)} E_{(1)} +\frac{5 }{2 } E_{(0)}^4 \right) \tag{74}
+$$
+
+$$
+\frac{f_{(2)}'' }{2 }  + \frac{f_{(2)}' }{r } = \frac{\gamma \kappa  }{2 }\left(E_{(1)}^2 + 10 E_{(0)}^3 E_{(1)} +2 E_{(0)}E_{(2)} + \frac{9 }{4 } E_{(0)}^6 \right) \tag{75}
+$$
+
+度规函数可表达
+
+$$
+f(r)
+=1+\frac{c }{r } + c_{(0)} \eta^0 \frac{e^2 }{r^2  } + c_{(1)} \eta \frac{e^4 }{r^8 } + c_{(2)} \eta^2 \frac{e^6 }{r^{10} } + \mathcal{O}\left(\eta^3 \right) \tag{76}
+$$
+
+$E^2\to \tilde{E} $
+
+$$
+r\frac{\mathrm{d}f(r) }{\mathrm{d}r } + f(r)-1
+=r^2 \frac{\gamma \kappa \tilde{E}\left[4+3\eta \tilde{E}\left(8+\eta \tilde{E} \right) \right] }{\left(-2+\eta \tilde{E} \right)^3 } \tag{78}
+$$
+
+$\tilde{E}\in \left[2/\eta ,0 \right] $
+
+$$
+\frac{4\tilde{E}\left(-2+\eta \tilde{E} \right)\left(2+7\eta\tilde{E} \right) }{4+\eta \tilde{E}\left(52+21\eta\tilde{E} \right) } \frac{\mathrm{d}f }{\mathrm{d}\tilde{E} } + f\left(\tilde{E} \right) - 1
+=-\frac{e\kappa \sqrt{\tilde{E}} \left[4+3\eta \tilde{E}\left(8+\eta\tilde{E} \right) \right] }{16\pi\left(2+7\eta\tilde{E} \right) } \tag{79}
+$$
+
+Ricci  标量
+
+$$
+R
+=g_{\mu\nu} R^{\mu\nu}
+=\frac{4 }{r^2 } - \frac{4f(r) }{r^2 } - \frac{8f'(r) }{r } - 2f''(r) \tag{80}
+$$
+
+$$
+R
+=-8\kappa \left(L-FL_F \right)
+=-\frac{8\gamma\kappa \eta\tilde{E}^2\left(10+3\eta\tilde{E} \right) }{\left(-2+\eta\tilde{E} \right)^3 } \tag{81}
+$$
+
+Ricci contraction
+
+$$
+R_{\mu\nu} R^{\mu\nu}
+=8\left[\frac{f'(r) }{r } + \frac{f(r)-1 }{r^2 }  \right]^2 + 8 \left[\frac{f'(r) }{r } + \frac{f''(r) }{2 }  \right]^2 \tag{82}
+$$
+
+$$
+R_{\mu\nu} R^{\mu\nu}
+=8\kappa\left[\left(L - 2FL_F \right)^2 + L^2 \right]
+=\frac{16\kappa \gamma^2 \tilde{E}^2 \left\{16+\eta \tilde{E}\left[112+\eta\tilde{E}\left(296+3\eta \tilde{E}\left(20+3\eta\tilde{E} \right) \right) \right] \right\} }{\left(-2+\eta\tilde{E} \right)^6 } \tag{83}
+$$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
