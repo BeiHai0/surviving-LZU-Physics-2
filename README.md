@@ -211,7 +211,7 @@ git push origin master
 		//"scope":"markdown",
 		"prefix":".rm",
 		"body":[
-			"\\mathrm{$0}",
+			"\\mathrm{$1}$2",
 		],
 		"description":"Mathrm"
 	},
@@ -459,6 +459,15 @@ git push origin master
 			"\\left[$1 \\right]$2"
 		],
 		"description":"[]"
+	},
+
+	"Lie": {
+		//"scope":"markdown",
+		"prefix":".lie",
+		"body":[
+			"\\mathfrak{$1 }$2"
+		],
+		"description":"Lie "
 	},
 
 	"": {
