@@ -702,6 +702,73 @@ R_{\mu\nu} R^{\mu\nu}
 =\frac{16\kappa \gamma^2 \tilde{E}^2 \left\{16+\eta \tilde{E}\left[112+\eta\tilde{E}\left(296+3\eta \tilde{E}\left(20+3\eta\tilde{E} \right) \right) \right] \right\} }{\left(-2+\eta\tilde{E} \right)^6 } \tag{83}
 $$
 
+# 2 Nonlinear electrodynamics and black holes
+
+## NLED formalism
+
+$$
+F_{\mu\nu}
+=2A_{[\mu,\nu]} \tag{1}
+$$
+
+$$
+F = \frac{1 }{4 } F_{\alpha\beta}F^{\alpha\beta},\quad
+\tilde{G} = \frac{1 }{4 } F_{\alpha\beta} \tilde{F}^{\alpha\beta} \tag{2}
+$$
+
+$F_{\mu\nu} $ 有一个独立的不变量和一个独立的伪不变量（pseudoinvariant）
+
+$\tilde{F}^{\alpha\beta}=\left(\mathrm{i}/2\sqrt{-g} \right) \varepsilon^{\alpha\beta\gamma\delta}F_{\gamma\delta} $ 是 $F^{\alpha\beta} $ 的对偶
+
+### $(F,\tilde{G}) $ and $(P,\tilde{Q}) $ frameworks
+
+$$
+P^{\alpha\beta}
+=2\frac{\partial L }{\partial F_{\alpha\beta} } 
+=\frac{\partial L }{\partial F } F^{\alpha\beta} + \frac{\partial L }{\partial \tilde{G} } \tilde{F}^{\alpha\beta} \tag{3}
+$$
+
+$$
+H
+=\frac{1 }{2 } P^{\alpha\beta} F_{\alpha\beta} - L\left(F,G^2 \right) \tag{4}
+$$
+
+与 $P^{\alpha\beta} $ 有关的不变量：
+
+$$
+P = \frac{1 }{4 } P_{\alpha\beta} P^{\alpha\beta},\quad
+\tilde{Q} = \frac{1 }{4 } P_{\alpha\beta}\tilde{P}^{\alpha\beta} \tag{5}
+$$
+
+哈密顿方程
+
+$$
+F^{\alpha\beta}
+=2\frac{\partial H }{\partial P_{\alpha\beta} } 
+=\frac{\partial H }{\partial P } P^{\alpha\beta} + \frac{\partial H }{\partial Q } \tilde{P}^{\alpha\beta} \tag{6}
+$$
+
+作用量：
+
+$$
+S
+=\int \mathrm{d}^4 x\sqrt{-g} \left\{R(16\pi)^{-1}-L \right\} \tag{7}
+$$
+
+$R $ 是曲率标量；$g:=\mathrm{det}\left|g_{\mu\nu} \right| $
+
+$$
+L
+=\frac{1 }{2 } P^{\mu\nu}P_{\mu\nu} - H\left(P,\tilde{Q} \right) \tag{8}
+$$
+
+能动张量和曲率标量
+
+$$
+4\pi T_{\mu\nu}
+=
+$$
+
 
 
 
