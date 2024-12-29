@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex 相对论效应实验报告"] 1733067118.18006 "相对论效应实验报告.aux" "相对论效应实验报告.bbl" "相对论效应实验报告" 1733067387.64681 2
-  "./相对论效应实验报告Notes.bib" 1733067386 104 4d8bb863c86f3d7b03a471e9d4707f34 ""
+["bibtex 相对论效应实验报告"] 1735446720.88765 "相对论效应实验报告.aux" "相对论效应实验报告.bbl" "相对论效应实验报告" 1735446721.44898 2
+  "./相对论效应实验报告Notes.bib" 1735446718 104 4d8bb863c86f3d7b03a471e9d4707f34 ""
   "c:/texlive/2024/texmf-dist/bibtex/bst/revtex/apsrev4-2.bst" 1732426081 69609 e9dea59f0e753ccda3ddc8f5806d846d ""
-  "相对论效应实验报告.aux" 1733067386 1661 b37a8bba9dff8e81d042925d746ece2c "pdflatex"
+  "相对论效应实验报告.aux" 1735446720 34 3985256e7290058c681f74d7a3565a19 "pdflatex"
   (generated)
   "相对论效应实验报告.bbl"
   "相对论效应实验报告.blg"
   (rewritten before read)
-["pdflatex"] 1733067385.00604 "c:/Users/ZhuanZ/Desktop/Surviving-LZU-Physics/近物实验1/相对论效应/相对论效应实验报告.tex" "相对论效应实验报告.pdf" "相对论效应实验报告" 1733067387.64765 0
-  "c:/Users/ZhuanZ/Desktop/Surviving-LZU-Physics/近物实验1/相对论效应/相对论效应实验报告.tex" 1733067218 10597 2f4d34f2c326455090f6270bd9012f78 ""
+["pdflatex"] 1735446715.98525 "c:/Users/ZhuanZ/Desktop/Surviving-LZU-Physics/近物实验1/相对论效应/相对论效应实验报告.tex" "相对论效应实验报告.pdf" "相对论效应实验报告" 1735446720.07955 0
+  "c:/Users/ZhuanZ/Desktop/Surviving-LZU-Physics/近物实验1/相对论效应/相对论效应实验报告.tex" 1735446701 10595 cc5ac47b7ba72b88f76fd31b859ba0ca ""
   "c:/Windows/Fonts/msyh.ttc" 1732075490 19701556 07c864a5b15e68fa47639738197fae38 ""
   "c:/Windows/Fonts/simhei.ttf" 1571147160 9753388 6abc0fcfbaa40600f9cecca3afeb3aa7 ""
   "c:/Windows/Fonts/simkai.ttf" 1571147160 11787328 76179557c160634a761c845ea111c893 ""
@@ -194,9 +194,9 @@
   "c:/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1732426900 8221628 e3d0cc5caa96335be3ba5dbdba791688 ""
   "c:/texlive/2024/texmf.cnf" 1732426721 713 e69b156964470283e0530f5060668171 ""
   "img/1.png" 1733067371 27533 c557ff803af43be0e9d1241ee4090357 ""
-  "相对论效应实验报告.aux" 1733067386 1661 b37a8bba9dff8e81d042925d746ece2c "pdflatex"
-  "相对论效应实验报告.bbl" 1733067118 1983 47924564a5d1a262930f145f52f7f0b7 "bibtex 相对论效应实验报告"
-  "相对论效应实验报告.tex" 1733067218 10597 2f4d34f2c326455090f6270bd9012f78 ""
+  "相对论效应实验报告.aux" 1735446720 34 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "相对论效应实验报告.bbl" 1735446721 0 d41d8cd98f00b204e9800998ecf8427e "bibtex 相对论效应实验报告"
+  "相对论效应实验报告.tex" 1735446701 10595 cc5ac47b7ba72b88f76fd31b859ba0ca ""
   (generated)
   "相对论效应实验报告.aux"
   "相对论效应实验报告.log"
