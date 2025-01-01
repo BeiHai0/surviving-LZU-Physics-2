@@ -355,7 +355,7 @@ $$
 
 $$
 \begin{aligned}
-\varphi(\vec{0},1)
+\varphi(\vec{0},t')\bigg|_{t'=100/217~\mathrm{s}}
 &=\frac{1 }{4\pi\varepsilon } \frac{q }{r\left(1-1.17\hat{r}\cdot\vec{\mathrm{e}}_q \right) } \\
 &=\frac{5q }{18\pi \varepsilon c }
 \end{aligned}
@@ -389,7 +389,7 @@ $$
 
 $$
 \begin{aligned}
-\varphi(\vec{0},1)
+\varphi(\vec{0},t')\bigg|_{t'=-100/17~\mathrm{s}}
 &=\frac{1 }{4\pi\varepsilon } \frac{q }{r\left(1-1.17\hat{r}\cdot\vec{\mathrm{e}}_q \right) } \\
 &=-\frac{5q }{18\pi \varepsilon c }
 \end{aligned}
