@@ -436,5 +436,38 @@ $$
 
 ## 3
 
-> 在国际单位制下，精细结构常数 $\alpha=e^2/\left(4\pi \varepsilon_0 \hbar c \right) $ 是无量纲常数。自然单位制允许选择 $e,\varepsilon_0,\hbar,c $ 中的 $3 $ 个物理常量进行归一化。在自然单位制下，取 $1=\varepsilon_0=\hbar=c $，则
+> 在国际单位制下，精细结构常数 $\alpha=e^2/\left(4\pi \varepsilon_0 \hbar c \right)=1/137 $ 是无量纲常数。自然单位制允许选择 $e,\varepsilon_0,\hbar,c $ 中的 $3 $ 个物理常量进行归一化。在自然单位制下，取 $1=\varepsilon_0=\hbar=c $，则 $\alpha=e^2/(4\pi)=1/137 $. 已知自然单位制下 $m_e=0.5~\mathrm{MeV},197~\mathrm{fm}\cdot \mathrm{MeV}=1,1~\mathrm{fm}=10^{-15}~\mathrm{m} $，求光球层的截止频率 $\displaystyle{\omega_p=\sqrt{\frac{e^2 n_0 }{m_e }  } }$ 
+
+自然单位制就是在国际单位制基础上加了几个**附加条件**。
+
+如规定 $c=1 $，就等价于国际单位制中如下的附加条件：
+
+$$
+c=3\times 10^{8}~\mathrm{m}/\mathrm{s}=1
+\Longrightarrow 1~\mathrm{s} = 3\times 10^{8}~\mathrm{m},\quad 1~\mathrm{m}=\frac{1 }{3 } \times 10^{-8}~\mathrm{s}
+$$
+
+自然单位制下，
+
+$$
+e^2 = \frac{4\pi }{137 } 
+$$
+
+由于在国际单位制下光球层截止频率的单位为 $\mathrm{s}^{-1} $，因此在自然单位制下可如下配凑回到国际单位制：
+
+$$
+\begin{aligned}
+\omega_p
+&=\sqrt{\frac{e^2 n_0 }{m_e } } \\
+&=\sqrt{\frac{4\pi }{137 } } \sqrt{\frac{1.5\times 10^{23} ~\mathrm{m}^{-3} }{0.5~\mathrm{MeV} } } \\
+&=\sqrt{\frac{4\pi }{137 } } \sqrt{\frac{1.5\times 10^{23} ~\mathrm{m}^{-3} }{0.5\cdot \frac{1 }{197 } \left(\mathrm{fm} \right)^{-1} } } \\
+&=\sqrt{\frac{4\pi \cdot197 \cdot 3 }{137 } } \sqrt{10^{8}~\mathrm{m}^{-2} } \\
+&=\sqrt{\frac{4\pi \cdot197 \cdot 3 }{137 } } \sqrt{10^{8}\left(\frac{1 }{3 } \times 10^{-8}~\mathrm{s} \right)^{-2} } \\
+&=\sqrt{\frac{4\pi \cdot 197\cdot 3\cdot 9 }{137 } } 10^{12}~\mathrm{s}^{-1} \\
+&\approx 2.2\times 10^{13}~\mathrm{s}^{-1} \\
+&=2.2\times 10^{13}~\mathrm{Hz}
+\end{aligned}
+$$
+
+
 
