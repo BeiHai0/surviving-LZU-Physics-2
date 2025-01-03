@@ -1,8 +1,10 @@
-> 证明 AB 效应中的相位差是规范不变量。
+> 证明 AB 效应中的相位差 $\delta $ 是规范不变量。
+
+国际单位制下，
 
 $$
 \delta
-=-\frac{e }{\hbar c } \oint \vec{A}(\vec{r}')\cdot\mathrm{d}\vec{r}'
+=-\frac{e }{\hbar} \oint \vec{A}(\vec{r}')\cdot\mathrm{d}\vec{r}'
 $$
 
 设：
@@ -16,11 +18,11 @@ $$
 $$
 \begin{aligned}
 \delta'
-&=-\frac{e }{\hbar c } \oint \vec{A}'(\vec{r}')\cdot\mathrm{d}\vec{r}' \\
-&=-\frac{e }{\hbar c } \oint\left(\vec{A}(\vec{r}')+\nabla' \chi(\vec{r}') \right)\cdot\mathrm{d}\vec{r}' \\
-&=\delta - \frac{e }{\hbar c } \oint \nabla'\chi(\vec{r}')\cdot\mathrm{d}\vec{r}' \\
-&=\delta - \frac{e }{\hbar c } \iint \nabla'\times\left(\nabla'\chi(\vec{r}') \right)\cdot\mathrm{d}\vec{S} \\
-&=\delta - \frac{e }{\hbar c } \iint \vec{0}\cdot\mathrm{d}\vec{S} \\
+&=-\frac{e }{\hbar } \oint \vec{A}'(\vec{r}')\cdot\mathrm{d}\vec{r}' \\
+&=-\frac{e }{\hbar } \oint\left[\vec{A}(\vec{r}')+\nabla' \chi(\vec{r}') \right]\cdot\mathrm{d}\vec{r}' \\
+&=\delta - \frac{e }{\hbar } \oint \nabla'\chi(\vec{r}')\cdot\mathrm{d}\vec{r}' \\
+&=\delta - \frac{e }{\hbar } \iint \nabla'\times\left[\nabla'\chi(\vec{r}') \right]\cdot\mathrm{d}\vec{S} \\
+&=\delta - \frac{e }{\hbar } \iint \vec{0}\cdot\mathrm{d}\vec{S} \\
 &=\delta
 \end{aligned}
 $$
