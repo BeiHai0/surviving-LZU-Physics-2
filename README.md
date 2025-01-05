@@ -4,6 +4,8 @@
 
 Surviving-LZU-Physics by BeiHai0 is marked with CC0 1.0 Universal 
 
+https://creativecommons.org/publicdomain/zero/1.0/deed.en
+
 # 必备软件
 
 - [Chrome](https://www.google.cn/intl/zh-CN/chrome/)
