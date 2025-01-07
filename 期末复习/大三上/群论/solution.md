@@ -126,6 +126,140 @@ $$
 
 > 求 $\mathrm{SO}(3) $ 群的生成元、无穷小算子、李代数、度规与 Casmir 算子。
 
+### 生成元
+
+$\mathrm{SO(3)} $ 群群元 $D(\omega) $：
+
+$$
+D(\omega) = \mathrm{e}^{-\mathrm{i}\omega_i T_i}
+$$
+
+其中，
+
+$$
+T_1
+=\begin{bmatrix}
+0 &0 &0 \\
+0 &0 &-\mathrm{i} \\
+0 &\mathrm{i} &0
+\end{bmatrix},\quad
+T_2
+=\begin{bmatrix}
+0 &0 &\mathrm{i} \\
+0 &0 &0 \\
+-\mathrm{i} &0 &0
+\end{bmatrix},\quad
+T_3
+=\begin{bmatrix}
+0 &-\mathrm{i} &0 \\
+\mathrm{i} &0 &0 \\
+0 &0 &0
+\end{bmatrix}
+$$
+
+生成元：
+
+$$
+I_1
+=\frac{\partial D(\omega) }{\partial \omega_1 } \bigg|_{\omega=0}
+=-\mathrm{i} T_1
+=\begin{bmatrix}
+0 &0 &0 \\
+0 &0 &-1 \\
+0 &1 &0
+\end{bmatrix}
+$$
+
+$$
+I_2
+=\frac{\partial D(\omega) }{\partial \omega_2 } \bigg|_{\omega=0}
+=-\mathrm{i} T_2
+=\begin{bmatrix}
+0 &0 &1 \\
+0 &0 &0 \\
+-1 &0 &0
+\end{bmatrix}
+$$
+
+$$
+I_3
+=\frac{\partial D(\omega) }{\partial \omega_3 } \bigg|_{\omega=0}
+=-\mathrm{i} T_3
+=\begin{bmatrix}
+0 &-1 &0 \\
+1 &0 &0 \\
+0 &0 &0
+\end{bmatrix}
+$$
+
+### 无穷小算子
+
+利用李群无穷小算子与生成元的关系：
+
+$$
+X_i
+=\left(I_i \right)^\mu_{~~\nu} x_\nu \partial_\mu
+$$
+
+$$
+X_1
+=\left(I_1 \right)^\mu_{~~\nu} x_\nu\partial_\mu
+=x_2\partial_3-x_3\partial_2
+$$
+
+$$
+X_2
+=\left(I_2 \right)^\mu_{~~\nu}x_\nu\partial_\mu
+=x_3\partial_1-x_1\partial_3
+$$
+
+$$
+X_3
+=\left(I_3 \right)^\mu_{~~\nu} x_\nu\partial_\mu
+=x_1\partial_2-x_2\partial_1
+$$
+
+### 李代数
+
+$$
+\left[I_i,I_j \right]=\varepsilon_{ijk} I_k
+$$
+
+$$
+C_{ij}^k = \varepsilon_{ijk}
+$$
+
+### 度规
+
+$$
+g_{ij}
+=C_{ik}^l C_{jl}^k
+=\varepsilon_{ikl}\varepsilon_{jlk}
+=\varepsilon_{kli}\varepsilon_{kjl}
+=\delta_{lj}\delta_{il} - \delta_{ll}\delta_{ij}
+=\delta_{ij}-3\delta_{ij}
+=-2\delta_{ij}
+$$
+
+### Casmir 算子
+
+$$
+g_{\mu\nu}
+=-2\delta_{\mu\nu}
+$$
+
+$$
+g^{\mu\nu}
+=-\frac{1 }{2 } \delta^{\mu\nu}
+$$
+
+$$
+C
+=g^{\mu\nu } X_\mu X_\nu
+=-\frac{1 }{2 } \delta^{\mu\nu} X_\mu X_\nu
+=-\frac{1 }{2 } X_\mu X_\mu
+=-\frac{1 }{2 } \left(X_1^2+x_2^2+x_3^2 \right)
+$$
 
 
 ## 3
