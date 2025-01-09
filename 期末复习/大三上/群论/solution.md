@@ -98,9 +98,71 @@ $$
 
 > 给出同态的定义，并证明 $\mathrm{D}_3 $ 群与 $\mathrm{C}_2 $ 群同态。
 
+### 同态的定义
+
+设 $G=\{g_{im} \} $ 与 $G'=\{g_i' \} $ 之间有多一对应关系，且为满射，且群 $G $ 中任意两个元素的乘积也按相同的对应关系对应于 $G' $ 中相应两个元素的乘积，则称 $G $ 与 $G' $ 同态，记为：
+
+$$
+G\simeq G'
+$$
+
+### 证明
+
+$\mathrm{D}_3 = \{e,d,f,a,b,c \},\mathrm{C}_2 = \{e',C_2^1 \} $
+
+从 $\mathrm{D}_3 $ 到 $\mathrm{C}_2 $ 的映射 $F:\mathrm{D}_3\to \mathrm{C}_2 $ 定义为：
+
+$$
+e,d,f\mapsto e',~~
+a,b,c\mapsto C_2^1
+$$
+
+显然，$F $ 是良定义的，且是满射。
+
+映射 $F $ 把 $\mathrm{D}_3 $ 中的旋转操作 $e,d,f $ 映射为 $\mathrm{C}_2 $ 中的恒元 $e' $，把 $\mathrm{D}_3 $ 中的反射操作 $a,b,c $ 映射为 $\mathrm{C}_2 $ 中的 $C_2^1 $
+
+令 $H_1=\{e,d,f \},H_2=\{a,b,c \} $，则：
+
+$$
+F(x)
+=\begin{cases}
+e'&,~~x\in H_1 \\
+C_2^1&,~~x\in H_2
+\end{cases}
+$$
+
+若 $x\in H_1,y\in H_1 $，则 $xy\in H_1 $，于是 $F(xy)=e'=F(x)F(y) $
+
+若 $x\in H_1,y\in H_2 $，则 $xy\in H_2 $，于是 $F(xy)=C_2^1=F(x)F(y) $
+
+若 $x\in H_2,y\in H_1 $，则 $xy\in H_2 $，于是 $F(xy)=C_2^1=F(x)F(y) $
+
+若 $x\in H_2,y\in H_2 $，则 $xy\in H_1 $，于是 $F(xy)=e'=F(x)F(y) $
+
+综上，
+
+$$
+\mathrm{D}_3\simeq \mathrm{C}_2
+$$
+
 ## 3
 
 > 给出直积群与半直积群的定义。若群 $H $ 与 $F $ 可以直积，且 $K=H\otimes F $，则 $H $ 与 $F $ 是否为 $K $ 的不变子群？若为半直积 $K=H\otimes_{\mathrm{S}} F $，则 $H $ 与 $F $ 是否为 $K $ 的不变子群？
+
+设 $H=\{h_\alpha \},F=\{f_\beta \} $ 是 $G $ 的两个子群，且满足：
+
+（1）除恒元以外 $H $ 和 $F $ 没有公共元素
+
+（2）两个子群的元素可对易：$h_\alpha f_\beta=f_\beta h_\alpha $
+
+则 $K=\{h_\alpha f_\beta|h_\alpha\in H,f_\beta\in F \} $ 构成一个群，称为 $H $ 与 $F $ 的直积群，记为：
+
+$$
+K
+=H\otimes F
+$$
+
+$H $ 与 $F $ 为 $K $ 的不变子群。
 
 ## 4
 
@@ -119,13 +181,49 @@ D\left(C_2^1 \right)
 \end{bmatrix}
 $$
 
-这个表示不可约。
+这个表示可约。
 
 ## 5
 
 > 给出 $\mathrm{SO}(3) $ 群中判断元素是否相互共轭的方法，并据此求 $\mathrm{D}_6 $ 群的共轭类。$\mathrm{D}_6 $ 群的对称轴如下：
 
+$\mathrm{SO}(3) $ 群的有限子群 $G $ 中两个群元 $C_{\vec{k}_1}(\omega_1) $ 和 $C_{\vec{k}_2}(\omega_2) $ 共轭的条件是：
 
+（1）$\omega_1=\omega_2 $
+
+（2）$\exist g\in G $ 使得 $\vec{k}_2 =g\vec{k}_1 $
+
+### $n $ 为偶数
+
+当 $n $ 为偶数，
+
+$$
+\mathrm{D}_n
+=\left\{e,C_n^1,C_n^2,\cdots,C_n^{n-1},\sigma_1,\cdots,\sigma_n \right\}
+$$
+
+恒元 $e $ 自成一类。
+
+由于 $C_n^{i}=C_{\vec{k}}\left(\frac{2\pi i }{n }  \right) $ 和 $C_n^{n-i}=C_{-\vec{k}}\left(\frac{2\pi i }{n }  \right) $，二者转动的角度相同，且 $\sigma_i \vec{k} = -\vec{k} $，因此 $C_n^i $ 和 $C_n^{n-i} $ 共轭。
+
+由于 $\forall \sigma_i $ 转动的角度均为 $\pi $，且通过 $C_n^1 $ 可将 $\sigma_1 $ 的转动轴依次变换为 $\sigma_3,\sigma_5,\cdots,\sigma_{n-1} $ 的转动轴，将 $\sigma_2 $ 的转动轴依次变换为 $\sigma_4,\sigma_6,\cdots,\sigma_n $ 的转动轴，因此 $\left\{\sigma_1,\sigma_3,\cdots,\sigma_{n-1} \right\} $ 为一类，$\left\{\sigma_2,\sigma_4,\cdots,\sigma_{n} \right\} $ 为一类。
+
+$C_n^{n/2} $ 自成一类。
+
+### $n $ 为奇数
+
+当 $n $ 为奇数，
+
+$$
+\mathrm{D}_n
+=\left\{e,C_n^1,C_n^2,\cdots,C_n^{n-1},\sigma_1,\cdots,\sigma_n \right\}
+$$
+
+恒元 $e $ 自成一类。
+
+由于 $C_n^{i}=C_{\vec{k}}\left(\frac{2\pi i }{n }  \right) $ 和 $C_n^{n-i}=C_{-\vec{k}}\left(\frac{2\pi i }{n }  \right) $，二者转动的角度相同，且 $\sigma_i \vec{k} = -\vec{k} $，因此 $C_n^i $ 和 $C_n^{n-i} $ 共轭。
+
+由于 $\forall \sigma_i $ 转动的角度均为 $\pi $，且通过 $C_n^1 $ 可将 $\sigma_1 $ 的转动轴依次变换为 $\sigma_2,\sigma_3,\cdots,\sigma_{n} $ 的转动轴，因此 $\left\{\sigma_1,\sigma_2,\cdots,\sigma_{n} \right\} $ 为一类。
 
 # 二、应用题
 
@@ -582,17 +680,110 @@ $$
 
 ### (1)
 
-> 求 $\mathrm{SO}(1,3) $ 群的生成元和对易关系。（提升：洛伦兹变换 $\displaystyle{t'=\frac{t-vx }{\sqrt{1-v^2} },x'=\frac{x-vt }{\sqrt{1-v^2} }   }$  ）
+> 求 $\mathrm{SO}(1,3) $ 群的生成元和对易关系。（提示：特殊洛伦兹变换 $\displaystyle{t'=\frac{t-vx }{\sqrt{1-v^2} },x'=\frac{x-vt }{\sqrt{1-v^2} }   }$  ）
 
+对于转动，三个生成元：
 
+$$
+R_1
+=\begin{bmatrix}
+0 &0 &0 &0 \\
+0 &0 &0 &0 \\
+0 &0 &0 &-1 \\
+0 &0 &1 &0 \\
+\end{bmatrix},\quad
+R_2
+=\begin{bmatrix}
+0 &0 &0 &0 \\
+0 &0 &0 &1 \\
+0 &0 &0 &0 \\
+0 &-1 &0 &0 \\
+\end{bmatrix},\quad
+R_3
+=\begin{bmatrix}
+0 &0 &0 &0 \\
+0 &0 &-1 &0 \\
+0 &1 &0 &0 \\
+0 &0 &0 &0 \\
+\end{bmatrix}
+$$
+
+对于平动，考虑特殊洛伦兹变换：
+
+$$
+t'=\frac{t-vx }{\sqrt{1-v^2} },\quad
+x'=\frac{x-vt }{\sqrt{1-v^2} },\quad
+y'=y,\quad
+z'=z
+$$
+
+与参数 $v $ 对应的无穷小算子：
+
+$$
+X_v
+=\frac{\partial x'^\mu }{\partial v } \bigg|_{v=0} \partial_\mu
+=-x\partial_t - t\partial_x
+$$
+
+推广到一般洛伦兹变换，有：
+
+$$
+X_1 = -x\partial_t - t\partial_x,\quad
+X_2 = -y\partial_t - t\partial_y,\quad
+X_3 = -z\partial_t - t\partial_z
+$$
+
+根据无穷小算子与生成元的关系：
+
+$$
+X_i = \left(I_i \right)^\mu_{~~\nu} x_\nu \partial_\mu
+$$
+
+可得三个与 Boost 对应的生成元：
+
+$$
+B_1
+=\begin{bmatrix}
+0 &1 &0 &0 \\
+1 &0 &0 &0 \\
+0 &0 &0 &0 \\
+0 &0 &0 &0 \\
+\end{bmatrix},\quad
+B_2
+=\begin{bmatrix}
+0 &0 &-1 &0 \\
+0 &0 &0 &0 \\
+-1 &0 &0 &0 \\
+0 &0 &0 &0 \\
+\end{bmatrix},\quad
+B_3
+=\begin{bmatrix}
+0 &0 &0 &1 \\
+0 &0 &0 &0 \\
+0 &0 &0 &0 \\
+1 &0 &0 &0 \\
+\end{bmatrix}
+$$
+
+生成元对易关系：
+
+$$
+\left[R_i,R_j \right] = \varepsilon_{ijk} R_k,\quad
+\left[B_i,B_j \right] = -\varepsilon_{ijk} R_k,\quad
+\left[R_i,B_j \right] = \varepsilon_{ijk} B_k
+$$
 
 ### (2)
 
 > 判断 $\mathrm{SO}(1,3) $ 是否为两个 $\mathrm{SO}(3) $ 群的直和。
 
+是。
+
 ### (3)
 
 > 判断 $\mathrm{SO}(1,3) $ 群是否是半单纯的。
+
+是半单纯的。（Carton 准则）
 
 ### (4)
 
