@@ -229,7 +229,7 @@ $$
 
 ## 1
 
-> 已知 $\mathrm{D}_2 $ 群为正 $n $ 边形对称群，求：（1）该群的乘法表；（2）所有共轭类与非平庸不变子群；（3）商群与特征标表；（4）以变量函数 $\psi_1=x^2,\psi_2=xy,\psi_3=y^2 $ 为基底写出 $\mathrm{D}_2 $ 群的一个三维表示。
+> 已知 $\mathrm{D}_2 $ 群为正 $n $ 边形对称群，求：（1）该群的乘法表；（2）所有共轭类与非平庸不变子群；（3）商群与特征标表；（4）以标量函数 $\psi_1=x^2,\psi_2=xy,\psi_3=y^2 $ 为基底写出 $\mathrm{D}_2 $ 群的一个三维表示。
 
 ### (1)
 
@@ -535,7 +535,7 @@ $$
 
 ### 生成元
 
-$\mathrm{SO(3)} $ 群群元 $D(\omega) $：
+$\mathrm{SO(3)} $ 群线性表示 $D(\omega) $：
 
 $$
 D(\omega) = \mathrm{e}^{-\mathrm{i}\omega_i T_i}
@@ -665,9 +665,8 @@ C
 =g^{\mu\nu } X_\mu X_\nu
 =-\frac{1 }{2 } \delta^{\mu\nu} X_\mu X_\nu
 =-\frac{1 }{2 } X_\mu X_\mu
-=-\frac{1 }{2 } \left(X_1^2+x_2^2+x_3^2 \right)
+=-\frac{1 }{2 } \left(X_1^2+X_2^2+X_3^2 \right)
 $$
-
 
 ## 3
 
@@ -708,7 +707,7 @@ R_3
 \end{bmatrix}
 $$
 
-对于平动，考虑特殊洛伦兹变换：
+对于 Boost，考虑只含一个参数 $v $ 的特殊洛伦兹变换：
 
 $$
 t'=\frac{t-vx }{\sqrt{1-v^2} },\quad
@@ -733,7 +732,7 @@ X_2 = -y\partial_t - t\partial_y,\quad
 X_3 = -z\partial_t - t\partial_z
 $$
 
-根据无穷小算子与生成元的关系：
+根据无穷小算子与生成元的关系（多一个负号，与 ppt 一致）：
 
 $$
 X_i = \left(I_i \right)^\mu_{~~\nu} x_\nu \partial_\mu
@@ -751,9 +750,9 @@ B_1
 \end{bmatrix},\quad
 B_2
 =\begin{bmatrix}
-0 &0 &-1 &0 \\
+0 &0 &1 &0 \\
 0 &0 &0 &0 \\
--1 &0 &0 &0 \\
+1 &0 &0 &0 \\
 0 &0 &0 &0 \\
 \end{bmatrix},\quad
 B_3
@@ -777,18 +776,102 @@ $$
 
 > 判断 $\mathrm{SO}(1,3) $ 是否为两个 $\mathrm{SO}(3) $ 群的直和。
 
-是。
+生成元对易关系：
+
+$$
+\left[R_i,R_j \right] = \varepsilon_{ijk} R_k,\quad
+\left[B_i,B_j \right] = -\varepsilon_{ijk} R_k,\quad
+\left[R_i,B_j \right] = \varepsilon_{ijk} B_k
+$$
+
+对生成元做线性变换：
+
+$$
+P_i = \frac{1 }{2 } \left(R_i + \mathrm{i} B_i \right),\quad
+Q_i = \frac{1 }{2 } \left(R_i - \mathrm{i} B_i \right)
+$$
+
+对易关系化为：
+
+$$
+\left[P_i , P_j \right] = \varepsilon_{ijk} P_k,\quad
+\left[Q_i , Q_j \right] = \varepsilon_{ijk} Q_k,\quad
+\left[P_i , Q_j \right] = 0
+$$
+
+可见，分别以 $\left\{P_i \right\} $ 和 $\left\{Q_i \right\} $ 为基矢可张成 $\mathrm{SO(1,3)} $ 的两个理想 $A,B $：
+
+$$
+A = \mathrm{span}\left\{P_i \right\},\quad
+B = \mathrm{span}\left\{Q_i \right\}
+$$
+
+且：
+
+$$
+A\cup B = \mathfrak{so}(1,3),\quad
+A\cap B = 0,\quad
+\left[A , B \right] = 0
+$$
+
+因此，$\mathfrak{so }(1,3) $ 李代数可写为 $A,B $ 两个理想的直和：
+
+$$
+\mathfrak{so }(1,3) = A\oplus B
+$$
 
 ### (3)
 
 > 判断 $\mathrm{SO}(1,3) $ 群是否是半单纯的。
 
-是半单纯的。（Carton 准则）
+是半单纯的。
+
+由 $A,B $ 李代数生成元对易关系可知，$A,B $ 都是 $\mathfrak{so }(3) $ 李代数，因此：
+
+$$
+\mathfrak{so }(1,3)
+=\mathfrak{so }(3) \oplus \mathfrak{so }(3)
+$$
+
+而 $\mathfrak{so }(3) $ 李代数不是 Abel 的，于是 $\mathfrak{so }(1,3) $ 李代数不含 Abel 理想，因此 $\mathrm{SO}(1,3) $ 群是半单纯的。
 
 ### (4)
 
 > 由此题结论推广至 $\mathrm{SO}(1,n) $ 群，求 $\mathrm{SO}(1,n) $ 群的生成元及其对易关系。
 
+$\mathrm{SO}(1,n) $ 群有 $n(n+1)/2 $ 个生成元，其中 $n $ 个对应 Boost，$(n-1)n/2 $ 个对应空间转动。
 
+与 $\mathrm{SO}(1,3) $ 类似，与 Boost 对应的 $n $ 个生成元为：
 
+$$
+B_1
+=\begin{bmatrix}
+0 &1 &0 &\cdots \\
+1 &0 & \\
+0 & &\ddots \\
+\vdots
+\end{bmatrix},\quad
+B_2
+=\begin{bmatrix}
+0 &0 &1 &\cdots \\
+0 &0 & \\
+1 & &\ddots \\
+\vdots
+\end{bmatrix},\quad\cdots
+$$
+
+规律：$\left(B_i \right)_{mn} = \delta_{mi}\delta_{n0} + \delta_{m0}\delta_{ni} $，其中矩阵的行、列均从 $0 $ 开始计数。
+
+与空间转动对应的 $(n-1)n/2 $ 个生成元即 $\mathrm{SO(n)} $ 的生成元，对应的无穷小算符对易关系为：
+
+$$
+\left[X_{ij} , X_{kl} \right] = \delta_{jk}X_{il} + \delta_{il} X_{jk} - \delta_{ik} X_{jl} - \delta_{jl} X_{ik}
+$$
+
+生成元对易关系为：
+
+$$
+\left[R_{ij} , R_{kl} \right]
+=-\delta_{jk}X_{il} - \delta_{il} X_{jk} + \delta_{ik} X_{jl} + \delta_{jl} X_{ik}
+$$
 
