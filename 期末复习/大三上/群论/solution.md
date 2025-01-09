@@ -181,7 +181,16 @@ D\left(C_2^1 \right)
 \end{bmatrix}
 $$
 
-这个表示可约。
+$$
+\chi(e) = 2,\quad
+\chi(C_2^1) = -2
+$$
+
+$$
+\left|\chi(e) \right|^2 + \left|\chi\left(C_2^1 \right) \right|^2 = 8>n_G=2
+$$
+
+因此这个表示可约。
 
 ## 5
 
@@ -193,37 +202,11 @@ $\mathrm{SO}(3) $ 群的有限子群 $G $ 中两个群元 $C_{\vec{k}_1}(\omega_
 
 （2）$\exist g\in G $ 使得 $\vec{k}_2 =g\vec{k}_1 $
 
-### $n $ 为偶数
-
-当 $n $ 为偶数，
+$\mathrm{D}_6 $ 群共轭类：
 
 $$
-\mathrm{D}_n
-=\left\{e,C_n^1,C_n^2,\cdots,C_n^{n-1},\sigma_1,\cdots,\sigma_n \right\}
+\left\{e \right\},\left\{C_6^1,C_6^5 \right\},\left\{C_6^2,C_6^4 \right\},\left\{C_6^3 \right\},\left\{c_{2(1)},c_{2(3)},c_{2(5)} \right\},\left\{c_{2(2)},c_{2(4)},c_{2(6)} \right\}
 $$
-
-恒元 $e $ 自成一类。
-
-由于 $C_n^{i}=C_{\vec{k}}\left(\frac{2\pi i }{n }  \right) $ 和 $C_n^{n-i}=C_{-\vec{k}}\left(\frac{2\pi i }{n }  \right) $，二者转动的角度相同，且 $\sigma_i \vec{k} = -\vec{k} $，因此 $C_n^i $ 和 $C_n^{n-i} $ 共轭。
-
-由于 $\forall \sigma_i $ 转动的角度均为 $\pi $，且通过 $C_n^1 $ 可将 $\sigma_1 $ 的转动轴依次变换为 $\sigma_3,\sigma_5,\cdots,\sigma_{n-1} $ 的转动轴，将 $\sigma_2 $ 的转动轴依次变换为 $\sigma_4,\sigma_6,\cdots,\sigma_n $ 的转动轴，因此 $\left\{\sigma_1,\sigma_3,\cdots,\sigma_{n-1} \right\} $ 为一类，$\left\{\sigma_2,\sigma_4,\cdots,\sigma_{n} \right\} $ 为一类。
-
-$C_n^{n/2} $ 自成一类。
-
-### $n $ 为奇数
-
-当 $n $ 为奇数，
-
-$$
-\mathrm{D}_n
-=\left\{e,C_n^1,C_n^2,\cdots,C_n^{n-1},\sigma_1,\cdots,\sigma_n \right\}
-$$
-
-恒元 $e $ 自成一类。
-
-由于 $C_n^{i}=C_{\vec{k}}\left(\frac{2\pi i }{n }  \right) $ 和 $C_n^{n-i}=C_{-\vec{k}}\left(\frac{2\pi i }{n }  \right) $，二者转动的角度相同，且 $\sigma_i \vec{k} = -\vec{k} $，因此 $C_n^i $ 和 $C_n^{n-i} $ 共轭。
-
-由于 $\forall \sigma_i $ 转动的角度均为 $\pi $，且通过 $C_n^1 $ 可将 $\sigma_1 $ 的转动轴依次变换为 $\sigma_2,\sigma_3,\cdots,\sigma_{n} $ 的转动轴，因此 $\left\{\sigma_1,\sigma_2,\cdots,\sigma_{n} \right\} $ 为一类。
 
 # 二、应用题
 
