@@ -878,28 +878,497 @@ G(r)
 =-\frac{1 }{2a } \mathbb{F}\left[\arccos\left(\frac{a^2-r^2 }{a^2+r^2 } , \frac{1 }{\sqrt{2} }  \right) \right] \tag{25}
 $$
 
+$$
+\int_r ^{\infty} \frac{\mathrm{d}s }{\sqrt{s^4+a^4} } + \int_0^r \frac{\mathrm{d}s }{\sqrt{s^4+a^4} } 
+=\frac{1 }{a } \mathrm{K}\left[\frac{1 }{2 }  \right] \tag{26}
+$$
 
+$$
+\Psi_2
+=\frac{m }{r^3 } - \frac{g^2 r^3 }{6 } \partial_{,rr} \left(\frac{1 }{r^2 } \int_r^\infty \frac{\mathrm{d}s }{s^2+\sqrt{s^4+a^4} }  \right) \tag{27}
+$$
 
+### Trajectories of test particles in BI black hole
 
+#### Massive particals
 
+$$
+\frac{\mathrm{d}^2 x^\nu }{\mathrm{d}\tau^2 } + \Gamma_{\alpha\beta}^\nu \frac{\mathrm{d}x^\alpha }{\mathrm{d}\tau } \frac{\mathrm{d}x^\beta }{\mathrm{d}\tau } 
+=-\frac{\varepsilon }{\mu } F_{\sigma}^{\nu} \mathrm{d}x^\sigma \mathrm{d}\tau \tag{28}
+$$
 
+$$
+\dot{t} \Psi_{BI}
+=E + \frac{\varepsilon g }{\mu } \sqrt{\frac{b }{4g } } \mathbb{F} \left[\arccos\left(\frac{r^2-g/b }{r^2+g/b }  , \frac{1 }{\sqrt{2} }  \right) \right] \tag{29}
+$$ 
 
+$$
+1 = \psi\dot{t}^2 - \psi^{-1} \dot{r}^2 - r^2\dot{\phi}^2 \tag{30}
+$$
 
+$$
+\dot{r}^2 + \psi\left(\frac{l^2 }{r^2 } + 1 \right) - \left\{E+\frac{\varepsilon g }{\mu } \sqrt{\frac{b }{4g } } \mathbb{F} \left[\arccos\left(\frac{r^2-g/b }{r^2+g/b }  , \frac{1 }{\sqrt{2} }  \right) \right] \right\}^2 \tag{31}
+$$
 
+#### 3.3.2
 
+$$
+g^{\mu\nu} S_{,\mu} S_\nu = 0\tag{32}
+$$
 
+$$
+\left(g^{\mu\nu} + \frac{4\pi }{b^2 } T_{\mathrm{NLED}}^{\mu\nu} \right) S_{,\mu} S_\nu
+=\gamma^{\mu\nu} S_{,\mu} S_\nu
+=0 \tag{33}
+$$
 
+$$
+\dot{r} = \sqrt{E^2-\frac{\psi_{BI} l^2 }{r^2 } } \tag{34}
+$$
 
+$$
+\dot{r}_{ph}
+=\sqrt{E^2 - \frac{\Psi_{BI} l^2 }{r^2 } \left(1+\frac{a^4 }{r^4 }  \right)^{-1}} \tag{35}
+$$
 
+## NLED black hole thermodynamics
 
+$$
+\delta M_{\Delta} = \frac{\kappa }{8\pi } \delta a_{\Delta} + \Phi_\Delta \delta Q_\Delta \tag{36}
+$$
 
+$$
+M_\Delta = \frac{\kappa a_\Delta }{4\pi } + \Phi_\Delta Q_\Delta \tag{37}
+$$
 
+$$
+M_\Delta = \frac{\kappa a_\Delta }{4\pi } + \Phi_\Delta Q_\Delta + V\left(a_\Delta , Q_\Delta , P_\Delta \right) \tag{38}
+$$
 
+$$
+a_\Delta \frac{\partial \psi }{\partial a_\Delta } + 8\pi r_\Delta Q_\Delta\frac{\partial\Phi }{\partial a_\Delta } + 8\pi r_\Delta \frac{\partial V }{\partial a_\Delta } = 0 \\
+\frac{r_\Delta }{2 } \frac{\partial \psi }{\partial Q_\Delta } + Q_\Delta \frac{\partial \Phi }{\partial Q_\Delta } + \frac{\partial V }{\partial Q_{\Delta} } = 0\tag{39}
+$$
 
+### Smarr
 
+$$
+\mathcal{L}(F)
+=\frac{2 }{2 sg^2 } \left(\frac{2g^2 F }{1+\sqrt{2g^2 F} }  \right)^{5/2} \tag{40}
+$$
 
+$$
+\psi_B
+=1-\frac{2 m(r) }{r } 
+=1-\frac{2mr^2 }{\left(r^2+g^2 \right)^{3/2} } \tag{41}
+$$
 
+$$
+M_\Delta
+=\frac{1 }{8\pi } \int\kappa \mathrm{d}a
+=\int \left(1-m' \right)\mathrm{d}r \tag{42}
+$$
 
+$$
+V = m r^3 \frac{2g^2 - r^2 }{\left(g^2 + r^2 \right)^{3/2} } \tag{43}
+$$
 
+$$
+M_\Delta = \frac{r }{2 } - \frac{m r^3 }{\left(r^2+g^2 \right)^{3/2} } \tag{44}
+$$
 
+## 5
+
+$$
+M_{\mathrm{sol}}^{(n)} = M_{\mathrm{ADM}}^{(n)} - M_\Delta^{(n)} \tag{45}
+$$
+
+$$
+M_\Delta^{(b)}(r_\Delta)
+=\frac{r_\Delta }{2 } + \frac{b^2 r_\Delta }{3 } \left(r_\Delta^2 - \sqrt{r_\Delta^4 + a^4} \right) - \frac{2g^2 }{3 } \int_0^{r_\Delta} \frac{\mathrm{d}s }{\sqrt{a^4+s^4} } \tag{46}
+$$
+
+$$
+M_{\mathrm{ADM}}^{(b)}(r_\Delta)
+=\frac{r_\Delta }{2 } + \frac{b^2 r_\Delta }{3 } \left(r_\Delta^2 - \sqrt{r_\Delta^4 + a^4} \right) + \frac{2g^2 }{3 } \int_{r_\Delta}^{\infty} \frac{\mathrm{d}s }{\sqrt{a^4+s^4} } \tag{46}
+$$
+
+## 6
+
+$$
+L(y)>0,\quad
+L(y)_{,y}>0,\quad
+L(y)_{,yy}>0 \tag{48}
+$$
+
+$$
+f(y)
+\equiv yL_{,yy} / L_{,y} > 0,\quad
+f(y) N(y) < 3\tag{49}
+$$
+
+$$
+L(y)
+=b^2\left(\sqrt{1+\frac{y^2 }{b^2 g^2 } } - 1 \right) > 0 \tag{50}
+$$
+
+$$
+L_{,y} = \frac{y }{g^2 } \left(1 + \frac{y^2 }{b^2 g^2 }  \right)^{-1/2} > 0 \\
+L_{,yy} = \frac{1 }{g^2 } \left(1 + \frac{y^2 }{b^2 g^2 }  \right)^{-3/2} > 0 \\
+f(y) = y\frac{L_{,yy} }{L_{,y} } = \left(1 + \frac{y^2 }{b^2 g^2 }  \right)^{-1} > 0\tag{51}
+$$ 
+
+$$
+\psi_{BI}(y)
+=1-\frac{2m\sqrt{y} }{g } + \frac{2b^2 g^2 }{3y } \left(1-\sqrt{1+\frac{y^2 }{b^2 g^2 } } \right) + \frac{2\sqrt{gby} }{3 } \mathbb{F}\left[\arccos\left(\frac{gb-y }{gb+y } , \frac{1 }{\sqrt{2} }  \right) \right] \tag{52}
+$$
+
+$$
+\psi_{BI}(y)
+=1-\frac{2m\sqrt{y} }{g } + \frac{2b^2 g^2 }{3y } \left(1-\sqrt{1+\frac{y^2 }{b^2 g^2 } } \right) - \frac{2\sqrt{gby} }{3 } \mathbb{F}\left[\arccos\left(\frac{y-gb }{gb+y } , \frac{1 }{\sqrt{2} }  \right) \right] \tag{53}
+$$
+
+$$
+E_{\mathrm{avail}}^{(n)}
+=M_{\mathrm{ADM}}^{(n)} - M_{\mathrm{ADM}}^{(0)} \tag{54}
+$$
+
+$$
+M_{\mathrm{ADM}}^{(b)}(r_\Delta) - \frac{r_\Delta }{2 } 
+=\frac{b^2 }{3 } \left\{r_\Delta^3\left(1-\sqrt{1+\frac{a^4 }{r_\Delta^4 } } \right) + a^3 \mathbb{F} \left[\arccos\left(\frac{r_\Delta^2 - a^2 }{r_\Delta^2 + a^2 }  \right) , \frac{1 }{\sqrt{2} }  \right] \right\} \tag{55}
+$$
+
+# 3
+
+## 1 intro
+
+## 2
+
+### 2.1
+
+$$
+\begin{align}
+h_\mu^a h_b^\mu = \delta_b^a,\quad
+h_\mu^a h_a^\nu = \delta_\mu^\nu.
+\end{align}
+$$
+
+$$
+\begin{align}
+T^{\lambda}_{~~\nu\mu} = \Gamma^\lambda_{~~\nu\mu} - \Gamma^\lambda_{~~\mu\nu} = h_a^\lambda\left(\partial_\nu h_\mu^a - \partial_\mu h_\nu^a \right),
+\end{align}
+$$
+
+$$
+\begin{align}
+S_\rho^{~~\mu\nu} = \frac{1 }{2 } \left(K^{\mu\nu}_{~~~~\rho} + \delta_\rho^\mu T^{\theta\nu}_{~~~~\theta} - \delta_\rho^\nu T^{\theta\mu}_{~~~~\theta} \right),
+\end{align}
+$$
+
+$$
+\begin{align}
+S
+=\frac{1 }{2\kappa^2 } \int\mathrm{d}^4 x\left[e f(T) + L_m \right],
+\end{align}
+$$
+
+$$
+\begin{align}
+\left[e^{-1}\partial_\mu \left(e S_a^{~~\mu\nu} + h_a^\lambda T^\rho_{~~\mu\lambda} S_\rho^{~~\nu\mu} \right) \right] f_T + S_a^{~~\mu\nu} \partial_\mu(T) f_{TT} + \frac{1 }{4 } h_a^\nu f
+=\frac{1 }{2 } \kappa^2 h_a^\rho T_\rho^\nu
+\end{align}
+$$
+
+$$
+\begin{align}
+\mathrm{d}s^2
+=\mathrm{d}t^2 - a^2(t)\left(\mathrm{d}x^2+\mathrm{d}y^2+\mathrm{d}z^2 \right),
+\end{align}
+$$
+
+$$
+\begin{align}
+12 H^2 f_T + f = 2\kappa^2 \rho_t,
+\end{align}
+$$
+
+$$
+\begin{align}
+48H^2\dot{H} f_{TT} - \left(12 H^2 + 4\dot{H} \right) f_T - f
+= 2\kappa^2 \rho_t,
+\end{align}
+$$
+
+### 2.2
+
+$$
+\begin{align}
+\bar{Y}
+=\lim_{V\to V_0} \frac{1 }{V } \int Y\sqrt{-g} \mathrm{d}^3 x,
+\end{align}
+$$
+
+$$
+\begin{align}
+\bar{E}_i = 0,\quad
+\bar{B}_i = 0,\quad
+\overline{E_i B_i} = 0,\quad
+\overline{E_i E_j} = -\frac{1 }{3 } E^2 g_{ij},\quad
+\overline{B_i B_j} = -\frac{1 }{3 } B^2 g_{ij},
+\end{align}
+$$
+
+$$
+\begin{align}
+\mathcal{L}
+=-\frac{1 }{4 } F + \omega F^2 + \eta_0 F^{*2},
+\end{align}
+$$
+
+$$
+\begin{align}
+T_{\mu\nu}
+=-4\mathcal{L}_F F_\mu^{~~\alpha} F_{\alpha\nu} + \left(F^* \mathcal{L}_{F^*} - \mathcal{L} \right) g_{\mu\nu},
+\end{align}
+$$
+
+$$
+\begin{align}
+\rho = -\mathcal{L} - 4E^2 \mathcal{L}_F,
+\end{align}
+$$
+
+$$
+\begin{align}
+\rho = \mathcal{L} + \frac{4 }{3 } \left(E^2-2B^2 \right)\mathcal{L}_F,
+\end{align}
+$$
+
+$$
+\begin{align}
+\rho_B = \frac{1 }{2 } B^2\left(1-8\omega B^2 \right),
+\end{align}
+$$
+
+$$
+\begin{align}
+p_B = \frac{1 }{6 } B^2 \left(1-40\omega_0 B^2 \right),
+\end{align}
+$$
+
+$$
+\begin{align}
+\mathcal{L} = -\frac{1 }{4 } F,\quad
+T_{\mu\nu} = F_\mu^{~~\alpha} F_{\alpha\nu} + \frac{1 }{4 } F g_{\mu\nu}.
+\end{align}
+$$
+
+$$
+\begin{align}
+\rho = 3p = \frac{1 }{2 } \left(E^2 + B^2 \right),
+\end{align}
+$$
+
+## 3
+
+$$
+\begin{align}
+\frac{3 H^2 }{\kappa^2 } = \rho_t,\quad
+-\frac{2\dot{H} }{\kappa^2 }  = \rho_t + p_t,
+\end{align}
+$$
+
+$$
+\begin{align}
+\rho_T = \frac{1 }{2\kappa^2 } \left(-12 H^2 f_T - f + 6H^2 \right),
+\end{align}
+$$
+
+$$
+\begin{align}
+p_T = -\frac{1 }{2\kappa^2 } \left[48\dot{H}H^2 f_{TT} - \left(12 H^2 + 4\dot{H} \right) f_T - f + 6 H^2 + 4\dot{H} \right],
+\end{align}
+$$
+
+$$
+\begin{align}
+\dot{\rho}_m + 3H \rho_m = 0,
+\end{align}
+$$
+
+$$
+\begin{align}
+\dot{\rho}_B + 3H\left(\rho_B + p_B \right) = 0,
+\end{align}
+$$
+
+$$
+\begin{align}
+\dot{\rho}_T + 3H\left(\rho_T + p_T \right) = 0,
+\end{align}
+$$
+
+$$
+\begin{aligned}
+\omega_t
+&=\left\{-\frac{1 }{\kappa^2 } \left[48\dot{H}H^2 f_{TT} - \left(12 H^2 + 4\dot{H} \right) f_T - f + 6 H^2 + 4\dot{H} \right] + \frac{B^2 }{6 } \left(1-40\omega_0 B^2 \right) \right\} \\
+&\times \left\{\rho_{m0} a^{-3} + \frac{1 }{2\kappa^2 } \left[6 H^2 - f-12 H^2 f_T \right] + \frac{B^2 }{2 } \left[1-8\omega_0 B^2 \right] \right\}^{-1} \tag{25}
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+q = -1 - \frac{\dot{H} }{H^2 } .\tag{26}
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+2q_t
+&=1 + 3\left[-\frac{1 }{\kappa^2 } \left(48\dot{H} H^2 f_{TT} - \left(12 H^2 + 4\dot{H} \right) f_T - f + 6H^2 + 4\dot{H} \right) + \frac{B^2 }{6 } \left(1-40\omega_0 B^2 \right) \right] \\
+&\times \left[\rho_{m0}a^{-3} + \frac{1 }{2 } \left(6H^2-f-12H^2 f_T \right) + \frac{B^2 }{2 } \left(1-8\omega_0 B^2 \right) \right]^{-1} \tag{27}
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+\frac{\mathrm{d}S_x }{\mathrm{d}t } + \frac{\mathrm{d}S_P }{\mathrm{d}t } = \frac{\pi R_X }{G } \left(2\dot{R}_X f_T + R_X\dot{T} f_{TT} \right).\tag{28}
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+\frac{\mathrm{d}S_I }{\mathrm{d}t } 
+=\frac{1 }{T_X } \left(\frac{\mathrm{d}E_I }{\mathrm{d}t } + p_t\frac{\mathrm{d}V }{\mathrm{d}t }  \right),\tag{29}
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+\frac{\mathrm{d}S_I }{\mathrm{d}t } 
+=\frac{4\pi R_X^2 }{T_X } \left(\dot{R}_X - H R_X \right)\left(\rho_t+p_t \right).\tag{30}
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+\frac{\mathrm{d}S_X }{\mathrm{d}t } + \frac{\mathrm{d}S_P }{\mathrm{d}t } + \frac{\mathrm{d}S_I }{\mathrm{d}t } 
+&=\frac{\pi R_X }{G } \left\{2\dot{R}_X f_T + R_X\dot{T}f_{TT} + 8\pi G R_X^2 \left[\rho_{m0}a^{-3} + \frac{1 }{\kappa^2 } \left(4\dot{H} T f_{TT} + 2\dot{H}\left(f_T-1 \right) \right) + \frac{2B_0^2 }{3a^4 } \left(1-\frac{16\omega_0 B_0^2 }{a^4 }  \right) \right]\times \left[\dot{R}_X - H R_X \right] \right\}.\tag{31}
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+R_H = \frac{1 }{H } ,\quad
+\dot{R}_H = -\frac{\dot{H} }{H^2 } .\tag{32}
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+\frac{\mathrm{d}S_X }{\mathrm{d}t } + \frac{\mathrm{d}S_P }{\mathrm{d}t } + \frac{\mathrm{d}S_I }{\mathrm{d}t } 
+&=-\frac{\pi }{G H} \left\{\frac{2\dot{H} }{H^2 } f_T + 12\dot{H}f_{TT} +\frac{8\pi G }{H^2 }\left(1+\frac{\dot{H} }{H^2 }  \right)\times \left[\rho_{m0}a^{-3} + \frac{1 }{\kappa^2 } \left(4\dot{H}T f_{TT} + 2\dot{H}\left(f_T-1 \right) \right) + \frac{2 B_0^2 }{3a^4 } \left(1-\frac{16\omega_0 B_0^2 }{a^4 }  \right) \right] \right\}.\tag{33}
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+R_E = a\int_0^{\infty} \frac{\mathrm{d}t }{a } ,\quad
+\dot{R}_E = H R_E - 1.\tag{34}
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+ \tag{35}
+\end{aligned}
+$$
+
+## 4
+
+$$
+\begin{aligned}
+a(t)
+=a_0\left(t_s-t \right)^{-h},\quad
+h>0,\quad t_s\geqslant t \tag{36}
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+H = \frac{h }{t_s - t } ,\quad
+T = -\frac{6h^2 }{\left(t_s-t \right)^2 } ,\quad
+\dot{H} = \frac{h }{\left(t_s - t \right)^2 } \tag{37}
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+f(T)
+=c_1\left(-\frac{T }{6h^2 }  \right)^{1/2} + \frac{2\kappa^2 \rho_{m0} }{a_0^3\left(3h+1 \right) } \left(-\frac{6h^2 }{T }  \right)^{3h/2} + \frac{\kappa^2 B_0^2 }{a_0^4\left(4h+1 \right) } \left(-\frac{6h^2 }{T }  \right)^{2h} - \frac{8\kappa^2 B_0^4 \omega_0 }{a_0^8 \left(8h+1 \right) } \left(-\frac{6h^2 }{T }  \right)^{4h},\tag{38}
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+H^2
+=\frac{8\pi G }{6 f_T } \left(\rho_t - \frac{f }{16\pi G }  \right).
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+c_1
+=12h H_0 \left[\frac{h\kappa^2 \rho_{m0} }{2a_0^3\left(3h+1  \right)H_0^2 } \left(\frac{h }{H_0 }  \right)^{3h} + \frac{h\kappa^2 B_0^2 }{3a_0^4\left(4h+1 \right)H_0^2 } \left(\frac{h }{H_0 }  \right)^{4h} - \frac{16h\kappa^2 B_0^4\omega_0 }{3a_0^8\left(8h+1 \right)H_0^2 } \left(\frac{h }{H_0 }  \right)^{8h} - 1 \right] \tag{39}
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+\omega_t
+=\frac{20\kappa^2 B_0^4 \omega_0 }{9h^2a_0^8 } \left(1+z \right)^{(8h+2)/h} - \frac{\kappa^2 B_0^2 }{18h^2 a_0^4 } (1+z)^{(4h+2)/h} - \frac{2(3h+2) }{3h } ,\tag{40}
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+q_t
+=\frac{10\kappa^2 B_0^4 \omega_0 }{3h^2 a_0^8 } (1+z)^{(8h+2)/h} - \frac{\kappa^2 B_0^2 }{12 h^2 a_0^4 } (1+z)^{(4h+2)/h} - \frac{5h+4 }{2h } ,\tag{41}
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+f_{TT}
+=\frac{(1+z)^{4/h} }{36h^4 } \left[\frac{3h(3h+2)\kappa^2\rho_{m0} }{2a_0^3(3h+1) }(1+z)^3 + \frac{2h(2h+1)\kappa^2 B_0^2 }{a_0^4(4h+1) } (1+z)^4 - \frac{32h(4h+1)\kappa^2 B_0^4 \omega_0 }{a_0^8 (8h+1) } (1+z)^8 - \frac{c_1 }{4(1+z)^{1/h} }   \right].\tag{42}
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+\frac{\mathrm{d}S_H }{\mathrm{d}t } + \frac{\mathrm{d}S_I }{\mathrm{d}t } 
+=-\frac{\pi(1+z)^{3/h} }{Gh^3 } \left[\frac{3h(3h+4)\kappa^2\rho_{m0} }{2a_0^3(3h+1) }(1+z)^3 + \frac{4(h+1)\kappa^2 B_0^2 }{3a_0^4(4h+1) } (1+z)^4 - \frac{64h(2h+1)\kappa^2 B_0^4 \omega_0 }{3a_0^8 (8h+1) } (1+z)^8 - \frac{c_1 }{4h(1+z)^{1/h} } \right] + \frac{2\pi }{G h^3 } (1+h)(1+z)^{1/h}.\tag{43}
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+\frac{\mathrm{d}S_E }{\mathrm{d}t } + \frac{\mathrm{d}S_I }{\mathrm{d}t } 
+=-\frac{\pi(1+z)^{3/h} }{Gh(1+h)^2 } \left[\frac{(3h+4)\kappa^2\rho_{m0} }{2a_0^3(3h+1) }(1+z)^3 + \frac{4(h+1)\kappa^2 B_0^2 }{3a_0^4(4h+1) } (1+z)^4 - \frac{64(2h+1)\kappa^2 B_0^4 \omega_0 }{3a_0^8 (8h+1) } (1+z)^8 - \frac{c_1 }{4h\kappa^2(1+z)^{1/h} } \right] + \frac{2\pi h }{G (1+h)^3 } (1+z)^{1/h}.\tag{44}
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+f(T)
+=c_2\left(-\frac{T }{6h^2 }  \right)^{1/2} + \frac{2\kappa^2\rho_{m0} }{a_0^3(1-3h) } \left(-\frac{T }{6h^2 }  \right)^{3h/2} + \frac{\kappa^2 B_0^2 }{a_0^4(1-4h) } \left(-\frac{T }{6h^2 }  \right)^{2h} - \frac{8\kappa^2 B_0^4 \omega_0 }{a_0^8(1-8h) } \left(-\frac{T }{6h^2 }  \right)^{4h},\tag{45}
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+c_2
+=12h H_0\left[-\frac{h\kappa^2 \rho_{m0} }{2a_0^3(1-3h)H_0^2 } \left(\frac{H_0 }{h }  \right)^{3h} - \frac{h\kappa^2 B_0^2 }{3a_0^4(1-4h)H_0^2 } \left(\frac{H_0 }{h }  \right)^{4h} + \frac{16h\kappa^2 B_0^4 \omega_0 }{3a_0 (1-8h)H_0^2 } \left(\frac{H_0 }{h }  \right)^{8h} - 1 \right] \tag{46}
+\end{aligned}
+$$
 
