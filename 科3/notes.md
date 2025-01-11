@@ -10,7 +10,7 @@
 
 $$
 F
-=\frac{1 }{2 } (\vec{B}^2-\vec{E}^2)
+=\frac{1 }{2 } (B^2-E^2)
 $$
 
 $$
@@ -37,7 +37,7 @@ $$
 
 当 $\beta\to 0 $，BI 模型的拉氏量与线性麦克斯韦的拉氏量相同。
 
-### NLE 模型
+### novel NLE 模型的拉氏量
 
 $$
 L_{\mathrm{general}}(F)
@@ -56,11 +56,9 @@ $$
 
 $p=1 $ 时得到麦克斯韦的拉氏量。
 
-分析在 $m=1,n=m+1=2 $ 的情况下进行。
+通过分析取 $m=1,n=m+1,a=-3b $
 
-取 $a=-3b $
-
-含有两个参数的拉氏量且遵守麦克斯韦极限的拉氏量：
+得到含有两个参数的拉氏量且遵守麦克斯韦极限的拉氏量：
 
 $$
 L(F)
@@ -208,14 +206,14 @@ NLE 模型中电场有限。
 
 ### 点电荷能量
 
-Hilbert stress-energy tensor
+希尔伯特应力-能量张量(Hilbert stress-energy tensor)
 
 $$
 T_{\mu\nu}^H
 \equiv -\frac{2 }{\sqrt{-g} } \left(\frac{\partial \left(\sqrt{-g}L(F) \right) }{\partial g^{\mu\nu} }  \right)\bigg|_{g=\eta} \tag{25}
 $$
 
-结合 (6)
+可得
 
 $$
 T_{\mu\nu}^H
@@ -245,7 +243,7 @@ $$
 =\frac{e^{3/2} }{\sqrt{4\pi\gamma} } \int_{0}^{\sqrt{\frac{2 }{\eta  } }} \frac{\sqrt{\left(2-\eta E^2 \right)\left[4+3\eta E^2\left(8+\eta E^2 \right) \right]\left[4+\eta E^2\left(52+21\eta E^2 \right) \right]} }{16\sqrt{E}\left(2+7\eta E^2 \right)^{5/2} } \mathrm{d}E \tag{29}
 $$
 
-总能量有限
+总能量有限。
 
 ### 真空双折射(vacuum birefringence)
 
@@ -314,14 +312,14 @@ $$
 \end{bmatrix} \tag{38}
 $$
 
-电场有两种模式。两种模式定义了色散关系。
+由 $\mathrm{det}(\Lambda)=0 $ 可知电场有两种模式。两种模式定义了色散关系。折射率定义为 $n\equiv k/\omega $，因此有两种不同的折射率：
 
 $$
 n_\parallel = \sqrt{1+\frac{\beta }{\alpha } \bar{E}^2},\quad
 n_\perp = 1 \tag{39}
 $$
 
-折射率定义为 $n\equiv k/\omega $，不同偏振的电磁波有不同的速度 $v_\parallel=n_\parallel^{-1},v_\perp=1 $
+不同偏振的电磁波有不同的速度 $v_\parallel=n_\parallel^{-1},v_\perp=1 $
 
 ### 拉格朗日函数的因果关系和统一性条件
 
