@@ -766,8 +766,119 @@ $$
 
 $$
 4\pi T_{\mu\nu}
-=
+=H_{,P} P_{\mu\alpha} P_\nu^\alpha - g_{\mu\nu}\left(2P H_{,P} + \tilde{Q} H_{,\tilde{Q}} - H \right) \\
+R
+=8\left(P H_{,P} + \tilde{Q} H_{,\tilde{Q}} - H \right) \tag{9}
 $$
+
+其中，$\partial H/\partial P = H_{,P} $ 
+
+Born-Infeld NE 由结构函数 $H(P,\tilde{Q}) $ 给出：
+
+$$
+H = b^2\left(1-\sqrt{1-2P/b^2+\tilde{Q}^2/b^4} \right) \tag{10}
+$$
+
+其中，$b $ 是最大场强，是 BI 理论中的参数。
+
+### NLED energy conditions
+
+类时矢量 $V^\alpha,V_\alpha V^\alpha<1 $ ，local energy density 非负 $T_{\mu\nu}V^\mu V^\nu\geqslant 0 $；local energy flow 矢量是非类空的要求 $T_{\alpha\beta}T_\gamma^\alpha V^\beta V^\gamma\leqslant 0 $
+
+$$
+H_{,P}>0,\quad
+\left(P H_{,P} + \tilde{Q} H_{,\tilde{Q}} - H \right) \geqslant 0 \tag{11}
+$$
+
+strong energy condition(SEC) $R_{\mu\nu}V^\nu V^\nu\geqslant 0 $，结合爱因斯坦方程
+
+$$
+R_{\mu\nu}V^\mu V^\nu 
+=8\left(T_{\mu\nu} V^\mu V^\nu + \frac{T }{2 }  \right) \geqslant 0\tag{12}
+$$
+
+## NLED Black holes
+
+SSS line element
+
+$$
+\mathrm{d}s^2 = -\psi\mathrm{d}t^2 + \psi^{-1} \mathrm{d}r^2 + r^2\left(\mathrm{d}\theta^2+\sin^2\theta\mathrm{d}\phi^2 \right) \tag{13}
+$$
+
+solution
+
+$$
+\psi
+=1-\frac{8\pi }{r } \int_{0}^{r} \left(\sqrt{r^4+1} - r^2 \right)\mathrm{d}r \tag{14}
+$$
+
+正则解 $D_{,r}=1/r,E_{,r}=r^2/\left(r^4+1 \right) $
+
+metric function
+
+$$
+\psi_{HI}
+=1-\frac{k }{r } + \frac{8\pi\gamma }{r } \int_{0}^{r} \left[r^2\ln\left(\frac{r^4 }{1+r^4 }  \right) \right] \mathrm{d}r \tag{15}
+$$
+
+SSS 线元 PT
+
+$$
+\psi_{PT}
+=1-\frac{d }{r } + \frac{8\pi }{r } \int_{0}^{r} H(x) x^2\mathrm{d}x \tag{16}
+$$
+
+$P=-e^2/4r^2 $
+
+$$
+H(P)
+=P\frac{1-3\Pi }{\left(1+\Pi \right)^3 } + \frac{6 }{q^2 s } \left(\frac{\Pi }{1+\Pi }  \right)^{5/2 } \tag{18}
+$$
+
+$$
+H(P)
+=P/\cosh^2\left(\sqrt{\Pi} \right) \tag{19}
+$$
+
+$$
+H(P)
+=P\frac{\exp\left(-s\sqrt{\Pi} \right) }{\left(1+\Pi \right)^{5/2} } \left(1+\frac{3\Pi }{s } + \Pi \right) \tag{20}
+$$
+
+### Type-D solutions with EBI
+
+### 3.2 Born-Infeld black hole and EBIon
+
+$$
+\Psi_{BI}(r)
+=1-\frac{2m }{r } + \frac{2 }{3 } b^2\left(r^2-\sqrt{r^4+a^4} \right) + \frac{4g^2 }{3r } G(r) \tag{21}
+$$
+
+$$
+G'(r)
+=-\left(r^4+a^4 \right)^{-1/2} \tag{22}
+$$
+
+$$
+F_{rt}
+=g\left(r^4+a^4 \right)^{-1/2},\quad
+P_{rt}
+=\frac{g }{r^2 } \tag{23}
+$$
+
+$$
+G(r)
+=\int_{r}^{\infty} \frac{\mathrm{d}s }{\sqrt{s^4+a^4} } 
+=\frac{1 }{2a } \mathbb{F} \left[\arccos\left(\frac{r^2-a^2 }{r^2+a^2 }  \right) , \frac{1 }{\sqrt{2} }  \right] \tag{24}
+$$
+
+$$
+G(r)
+=\int_{0}^{r} \frac{-\mathrm{d}s }{\sqrt{s^4+a^4} } 
+=-\frac{1 }{2a } \mathbb{F}\left[\arccos\left(\frac{a^2-r^2 }{a^2+r^2 } , \frac{1 }{\sqrt{2} }  \right) \right] \tag{25}
+$$
+
+
 
 
 
