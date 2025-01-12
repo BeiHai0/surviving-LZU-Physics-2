@@ -321,7 +321,7 @@ $$
 
 不同偏振的电磁波有不同的速度 $v_\parallel=n_\parallel^{-1},v_\perp=1 $
 
-### 拉格朗日函数的因果关系和统一性条件
+### 拉格朗日函数的因果性和单一性条件
 
 若拉氏量满足不等式：
 
@@ -331,7 +331,7 @@ L_{FF}\geqslant 0,
 L_F + 2F L_{FF} \leqslant 0\tag{40}
 $$
 
-则群速度不超过真空光速。
+则群速度不超过真空光速，且动能非负。
 
 $$
 L_F
@@ -342,19 +342,23 @@ $$
 
 #### 电场部分
 
-$B=0 $
+取 $B=0 $，拉氏量 $\displaystyle{L(F)=-\frac{\left(aF+1 \right)^m }{\delta(bF+1)^n } \left(\beta F \right)^p }$ ，前两个不等式给出
 
 $$
 n\geqslant m+1,a\leqslant 0,b\geqslant 0\tag{42}
 $$
 
+在此基础上，第三个不等式自动满足。
+
 #### 磁场部分
+
+取 $E=0 $，类似可得
 
 $$
 n\geqslant m+1,a\geqslant 0,b\leqslant 0\tag{43}
 $$
 
-#### $n=m+1,a=-3b $
+#### $n=m+1,a=-3b $ 时的因果性和单一性条件
 
 $$
 L_F
@@ -363,14 +367,12 @@ L_{FF}
 =\frac{2\gamma \eta\left(5-7\eta F \right) }{\left(1+\eta F \right)^4 } \tag{44} 
 $$
 
-第三不等式
-
 $$
 L_F + 2FL_{FF} 
 =\gamma \frac{-\eta F\left(26-21\eta F \right) }{\left(1+\eta F \right)^4 } \tag{45}
 $$
 
-仅电场 $B=0 $，因果和单一条件
+仅电场部分，取 $B=0 $，因果性和单一性条件三个不等式给出
 
 $$
 -\frac{2+7\eta E^2 }{\left(2-\eta E^2 \right)^3 } \leqslant 0,
@@ -381,35 +383,33 @@ $$
 
 所有情况都有 $E<\sqrt{2/\eta} $，$E_{\max}=\sqrt{\eta/2} $
 
-分析磁场
+分析磁场，取 $E=0 $，前两个不等式给出
 
 $$
 \left(-1+\frac{7 }{2 } \eta B^2 \right)\leqslant 0,
 \left(5-\frac{7 }{2 } \eta B^2 \right)\geqslant 0 \tag{47}
 $$
 
-$F<1/7\eta $
+可以得到 $F<1/7\eta $
 
-单一性条件
+第三不等式给出
 
 $$
 -2+\eta B^2\left(26-\frac{21 }{2 } \eta B^2 \right)\leqslant 0\tag{48}
 $$
 
-$(13-2\sqrt{37})/21<\eta F<(13+2\sqrt{37})/21 $
+得到 $(13-2\sqrt{37})/21<\eta F<(13+2\sqrt{37})/21 $
 
 ### 新 NLE 模型与 GR 耦合
 
-最小耦合拉氏量 $L(F) $
+通过作用量把拉氏量 $L(F) $ 与引力进行最小耦合
 
 $$
 I
 =\int \mathrm{d}^4 x\sqrt{-g}\left(\frac{R }{\kappa } + L(F) \right) \tag{49}
 $$
 
-$R $ Ricci scalar，运动方程
-
-
+其中 $R $ 为里奇标量。变分可得运动方程
 
 $$
 \nabla_\mu\left(\frac{\partial L }{\partial F } F^{\mu\nu} \right)
@@ -421,7 +421,7 @@ R_{\mu\nu} - \frac{1 }{2 } g_{\mu\nu} R
 =\kappa T_{\mu\nu} \tag{51}
 $$
 
-$R_{\mu\nu} $ Ricci 张量，$T_{\mu\nu} $ Hilbert 能量-动量张量，在弯曲时空表为
+其中 $R_{\mu\nu} $ 为里奇张量，$T_{\mu\nu} $ 为 Hilbert 能量-动量张量，在弯曲时空表达为
 
 $$
 T_\mu^\nu
@@ -435,7 +435,7 @@ $$
 =-f(r)\mathrm{d}t^2 + \frac{1 }{f(r) } \mathrm{d}r^2 + r^2\left(\mathrm{d}\theta^2+\sin^2\theta\mathrm{d}\phi^2 \right) \tag{53}
 $$
 
-假设 $F_{tr},F_{\theta\phi} $ 在 $F_{\mu\nu} $ 非零，$F_{tr}=-F_{rt} $ 代表径向电场，$F_{\theta\phi}=-F_{\phi\theta} $ 代表径向磁场。stress 能动张量非零分量 in (52)
+假设 $F_{tr},F_{\theta\phi} $ 在 $F_{\mu\nu} $ 非零，$F_{tr}=-F_{rt} $ 代表径向电场，$F_{\theta\phi}=-F_{\phi\theta} $ 代表径向磁场。应力能动-张量非零分量
 
 $$
 T_t^t = T_r^r
@@ -451,8 +451,6 @@ $$
 
 纯磁场解来自 $F_{tr=0} $，非零麦克斯韦张量分量 $F_{\theta\phi}=-q_m \sin\theta $，$q_m $ 为常数，可理解为一个磁单极子的总荷量，导致径向磁场 $B_r=q_m/r^2 $，麦克斯韦不变量 $F=q_m^2/2r^4 $；$r=0 $ 处奇异
 
-
-
 magnetic monopole 能动张量
 
 $$
@@ -467,21 +465,21 @@ T_\theta^\theta
 =\frac{\gamma q_m^2\left(4 r^8-2\eta q_m^2 r^4+3\eta^2q_m^4 \right) }{\left(2r^4+\eta q_m^2 \right)^3 } \tag{56}
 $$
 
-爱因斯坦张量
+由线元可得爱因斯坦张量
 
 $$
 G_\mu^\nu
 =\mathrm{diag}\left[\frac{f' }{r } + \frac{f-1 }{r^2 } ,\frac{f' }{r } + \frac{f-1 }{r^2 } , \frac{f'' }{2 } + \frac{f' }{r } , \frac{f'' }{2 } + \frac{f' }{r }  \right] \tag{57}
 $$
 
-$' $ 代表度规函数 $f(r) $ 的径向微分。$tt $ 或 $rr $ 分量
+$' $ 代表度规函数 $f(r) $ 的径向微分。爱因斯坦非线性麦克斯韦方程 $tt $ 或 $rr $ 分量简化为
 
 $$
-\frac{f' }{r } ++ \frac{f-1 }{r^2 } 
+\frac{f' }{r } + \frac{f-1 }{r^2 } 
 =\kappa \frac{\gamma q_m^2\left(3\eta q_m^2-2r^4 \right) }{\left(2r^4+\eta q_m^2 \right)^2 } \tag{58}
 $$
 
-解上面方程
+解上面方程可得度规函数
 
 $$
 f(r)
@@ -500,26 +498,32 @@ $$
 
 $b_0,g $ 是长度量纲常数。
 
-线元
+线元可改写为
 
 $$
 \mathrm{d}s^2
 =-\left(1-\frac{b_0^2r^2 }{r^4+g^4 }  \right)\mathrm{d}t^2 + \left(1-\frac{b_0^2r^2 }{r^4+g^4 }  \right)^{-1}\mathrm{d}r^2 + r^2\left(\mathrm{d}\theta^2+\sin^2\theta \mathrm{d}\phi^2 \right) \tag{61}
 $$
 
+当 $r$ 趋于无穷大，时空度规渐近平坦
+
 $$
 g_{tt}\to -1,g_{rr}\to 1 \quad \mathrm{as}\quad r\to\infty
 $$
+
+对于很小的 $r$，其行为与 de-Sitter 时空相似
 
 $$
 g_{tt}\to -\left(1-c^2r^2 \right),\quad g^{rr} \to \left(1-c^2r^2 \right)\quad \mathrm{as}\quad r\to 0
 $$
 
-$c $ 是常数
+其中，$c $ 是常数。
+
+$g_{tt}=0$ 给出无限红移面的位置。若度规参数满足 $0<g<0.5 b_0^2 $，则上面几何代表一系列双视界黑洞；当 $g^2=0.5b_0^2$，得到单视界黑洞；若 $g^2>0.5b_0^2$，则黑洞没有视界。特别地，当 $g^2=0$，黑洞有一个视界。
 
 #### 曲率张量和不变量的正则性
 
-坐标基底，非零黎曼曲率张量分量
+可通过黎曼和里奇张量各分量是否发散来判断时空的正则性、奇异性。坐标基底，非零黎曼曲率张量分量
 
 $$
 R^0_{~~ 110} 
@@ -543,7 +547,7 @@ R_{00} = -R_{11} = -\frac{b_0^2\left(r^8-12g^4r^4+3g^8 \right) }{\left(r^4+g^4 \
 $$
 
 $$
-R_{22} = R{33} = \frac{b_0^2 \left(3g^4-r^4 \right) }{\left(r^4+g^4 \right)^2 } \tag{63}
+R_{22} = R_{33} = \frac{b_0^2 \left(3g^4-r^4 \right) }{\left(r^4+g^4 \right)^2 } \tag{63}
 $$
 
 当 $r\to 0 $，两个张量的分量都有限；当 $r\to \infty $，所有分量趋于零。
@@ -557,7 +561,7 @@ R = g^{\mu\nu}R_{\mu\nu}
 =\frac{4b_0^2\left(3g^8-5g^4r^4 \right) }{\left(r^4+g^4 \right)^3 } \tag{64}
 $$
 
-Riccc contraction
+Ricci contraction
 
 $$
 R_{\mu\nu} R^{\mu\nu}
@@ -571,6 +575,8 @@ K
 =R_{\mu\nu\lambda\delta} R^{\mu\nu\lambda\delta}
 =\frac{8\left(3g^{16}-10g^{12}r^4+74 g^8 r^8-34g^4r^{12}+7r^{16} \right)b_0^4 }{\left(r^4+g^4 \right)^6 } \tag{66}
 $$
+
+在 $r\to 0$ 时，三个不变量也都有限。 
 
 #### 能量情况
 
@@ -586,14 +592,14 @@ p
 =-\frac{b_0^2\left(3g^8-12g^4r^4+r^8 \right) }{\kappa \left(r^4+g^4 \right)^3 } \tag{67}
 $$
 
-NEC (Nullu Energy Condition) $\rho+\tau \geqslant 0,\rho+p\geqslant 0 $，对一个在 $\rho+\tau=0 $ 自动满足；第二个
+NEC (Null Energy Condition) $\rho+\tau \geqslant 0,\rho+p\geqslant 0 $，第一个在 $\rho+\tau=0 $ 时自动满足；
 
 $$
 \rho+p
 =\frac{2b_0^2 r^4\left(r^4-7g^4 \right) }{\kappa \left(r^4+g^4 \right)^3 } \tag{68}
 $$
 
-满足，只能 $r^4\leqslant 7g^4 $
+第二个满足，只能 $r^4\leqslant 7g^4 $
 
 
 #### electric naked sigularity solution
@@ -674,6 +680,8 @@ $$
 $$
 
 Ricci  标量
+
+
 
 $$
 R
@@ -1138,7 +1146,7 @@ $$
 
 $$
 \begin{align}
-\rho = \mathcal{L} + \frac{4 }{3 } \left(E^2-2B^2 \right)\mathcal{L}_F,
+p = \mathcal{L} + \frac{4 }{3 } \left(E^2-2B^2 \right)\mathcal{L}_F,
 \end{align}
 $$
 
@@ -1230,7 +1238,7 @@ $$
 
 $$
 \begin{aligned}
-\frac{\mathrm{d}S_x }{\mathrm{d}t } + \frac{\mathrm{d}S_P }{\mathrm{d}t } = \frac{\pi R_X }{G } \left(2\dot{R}_X f_T + R_X\dot{T} f_{TT} \right).\tag{28}
+\frac{\mathrm{d}S_X }{\mathrm{d}t } + \frac{\mathrm{d}S_P }{\mathrm{d}t } = \frac{\pi R_X }{G } \left(2\dot{R}_X f_T + R_X\dot{T} f_{TT} \right).\tag{28}
 \end{aligned}
 $$
 
@@ -1296,7 +1304,7 @@ $$
 \begin{aligned}
 H = \frac{h }{t_s - t } ,\quad
 T = -\frac{6h^2 }{\left(t_s-t \right)^2 } ,\quad
-\dot{H} = \frac{h }{\left(t_s - t \right)^2 } \tag{37}
+\dot{H} = \frac{h }{\left(t_s - t \right)^2 }. \tag{37}
 \end{aligned}
 $$
 

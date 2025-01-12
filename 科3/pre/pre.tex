@@ -384,32 +384,699 @@ $$
 
 \subsection{拉格朗日量的因果性和单一性条件}
 
-\subsection{新 NLE 与广义相对论的耦合}
-
-\subsection{结论}
-
 \begin{frame}
-    \frametitle{\textbf{}}
+    若拉氏量满足不等式：
 
+    $$
+    L_F \leqslant 0,
+    L_{FF}\geqslant 0,
+    L_F + 2F L_{FF} \leqslant 0
+    $$
+    
+    则群速度不超过真空光速，且动能非负。
+    
+     电场部分
+    
+    取 $B=0 $，拉氏量 $\displaystyle{L(F)=-\frac{\left(aF+1 \right)^m }{\delta(bF+1)^n } \left(\beta F \right)^p }$ ，前两个不等式给出
+    
+    $$
+    n\geqslant m+1,a\leqslant 0,b\geqslant 0
+    $$
+    
+    在此基础上，第三个不等式自动满足。
+    
+    磁场部分
+    
+    取 $E=0 $，类似可得
+    
+    $$
+    n\geqslant m+1,a\geqslant 0,b\leqslant 0
+    $$
+    
+    $n=m+1,a=-3b $ 时的因果性和单一性条件
+    
+    $$
+    L_F
+    =\frac{\gamma\left(-1+7\eta F \right) }{\left(1+\eta F \right)^3 },
+    L_{FF}
+    =\frac{2\gamma \eta\left(5-7\eta F \right) }{\left(1+\eta F \right)^4 } 
+    $$
+    
+    $$
+    L_F + 2FL_{FF} 
+    =\gamma \frac{-\eta F\left(26-21\eta F \right) }{\left(1+\eta F \right)^4 }
+    $$
 \end{frame}
 
+\begin{frame}
+    仅电场部分，取 $B=0 $，因果性和单一性条件三个不等式给出
+    
+    $$
+    -\frac{2+7\eta E^2 }{\left(2-\eta E^2 \right)^3 } \leqslant 0,
+    \frac{10+7\eta E^2 }{\left(2-\eta E^2 \right)^4 } \geqslant 0,
+    \frac{-4-\eta E^2\left(521\eta E^2 \right) }{\left(2-\eta E^2 \right)^4 } \leqslant 0
+    $$
+    
+    
+    所有情况都有 $E<\sqrt{2/\eta} $，$E_{\max}=\sqrt{\eta/2} $
+    
+    分析磁场，取 $E=0 $，前两个不等式给出
+    
+    $$
+    \left(-1+\frac{7 }{2 } \eta B^2 \right)\leqslant 0,
+    \left(5-\frac{7 }{2 } \eta B^2 \right)\geqslant 0
+    $$
+    
+    可以得到 $F<1/7\eta $
+    
+    第三不等式给出
+    
+    $$
+    -2+\eta B^2\left(26-\frac{21 }{2 } \eta B^2 \right)\leqslant 0
+    $$
+    
+    得到 $(13-2\sqrt{37})/21<\eta F<(13+2\sqrt{37})/21 $
+\end{frame}
 
+\subsection{新 NLE 与广义相对论的耦合}
+
+\begin{frame}
+    通过作用量把拉氏量 $L(F) $ 与引力进行最小耦合
+
+    $$
+    I
+    =\int \mathrm{d}^4 x\sqrt{-g}\left(\frac{R }{\kappa } + L(F) \right) 
+    $$
+    
+    其中 $R $ 为里奇标量。变分可得运动方程
+    
+    $$
+    \nabla_\mu\left(\frac{\partial L }{\partial F } F^{\mu\nu} \right)
+    =0
+    $$
+    
+    $$
+    R_{\mu\nu} - \frac{1 }{2 } g_{\mu\nu} R
+    =\kappa T_{\mu\nu}
+    $$
+    
+    其中 $R_{\mu\nu} $ 为里奇张量，$T_{\mu\nu} $ 为 Hilbert 能量-动量张量，在弯曲时空表达为
+    
+    $$
+    T_\mu^\nu
+    =L\delta_\mu^\nu - L_F F_{\mu\lambda} F^{\nu \lambda}
+    $$
+    
+    考虑球对称静态时空，线元
+    
+    $$
+    \mathrm{d}s^2
+    =-f(r)\mathrm{d}t^2 + \frac{1 }{f(r) } \mathrm{d}r^2 + r^2\left(\mathrm{d}\theta^2+\sin^2\theta\mathrm{d}\phi^2 \right)
+    $$
+    
+    假设 $F_{tr},F_{\theta\phi} $ 在 $F_{\mu\nu} $ 非零，$F_{tr}=-F_{rt} $ 代表径向电场，$F_{\theta\phi}=-F_{\phi\theta} $ 代表径向磁场。应力能动-张量非零分量
+    
+    $$
+    T_t^t = T_r^r
+    =L(F) - L_F F_{tr}F^{tr},
+    T_\theta^\theta
+    =T_\phi^\phi
+    =L(F) - L_F F_{\theta\phi}F^{\theta\phi}
+    $$
+    
+    下面只关注纯磁场解和纯电场解。
+\end{frame}
+
+\begin{frame}{磁场正则黑洞解 }
+    纯磁场解来自 $F_{tr=0} $，非零麦克斯韦张量分量 $F_{\theta\phi}=-q_m \sin\theta $，$q_m $ 为常数，可理解为一个磁单极子的总荷量，导致径向磁场 $B_r=q_m/r^2 $，麦克斯韦不变量 $F=q_m^2/2r^4 $；$r=0 $ 处奇异
+
+    magnetic monopole 能动张量
+    
+    $$
+    T_t^t
+    =T_r^r
+    =\frac{\gamma q_m^2\left(3\eta q_m^2-2r^4 \right) }{\left(2r^4+\eta q_m^2 \right)^2 }
+    $$
+    
+    $$
+    T_\theta^\theta
+    =T_\phi^\phi
+    =\frac{\gamma q_m^2\left(4 r^8-2\eta q_m^2 r^4+3\eta^2q_m^4 \right) }{\left(2r^4+\eta q_m^2 \right)^3 }
+    $$
+    
+    由线元可得爱因斯坦张量
+    
+    $$
+    G_\mu^\nu
+    =\mathrm{diag}\left[\frac{f' }{r } + \frac{f-1 }{r^2 } ,\frac{f' }{r } + \frac{f-1 }{r^2 } , \frac{f'' }{2 } + \frac{f' }{r } , \frac{f'' }{2 } + \frac{f' }{r }  \right]
+    $$
+    
+    $' $ 代表度规函数 $f(r) $ 的径向微分。爱因斯坦非线性麦克斯韦方程 $tt $ 或 $rr $ 分量简化为
+    
+    $$
+    \frac{f' }{r } + \frac{f-1 }{r^2 } 
+    =\kappa \frac{\gamma q_m^2\left(3\eta q_m^2-2r^4 \right) }{\left(2r^4+\eta q_m^2 \right)^2 }
+    $$
+    
+    解上面方程可得度规函数
+\end{frame}
+
+\begin{frame}{磁场正则黑洞解}
+    $$
+    f(r)
+    =1+\frac{c_0 }{r } + \frac{\kappa \gamma q_m^2 r^2 }{2r^4+\eta q_m^2 } 
+    $$
+    
+    $c_0 $ 是积分常数。取
+    
+    $$
+    c_0=0,
+    \gamma=-\frac{2b_0^2 }{\kappa q_m^2} ,
+    \eta=\frac{2g^4 }{q_m^2 }
+    $$
+    
+    $b_0,g $ 是长度量纲常数。线元可改写为
+    
+    $$
+    \mathrm{d}s^2
+    =-\left(1-\frac{b_0^2r^2 }{r^4+g^4 }  \right)\mathrm{d}t^2 + \left(1-\frac{b_0^2r^2 }{r^4+g^4 }  \right)^{-1}\mathrm{d}r^2 + r^2\left(\mathrm{d}\theta^2+\sin^2\theta \mathrm{d}\phi^2 \right)
+    $$
+    
+    当 $r$ 趋于无穷大，时空度规渐近平坦
+    
+    $$
+    g_{tt}\to -1,g_{rr}\to 1 \quad \mathrm{as}\quad r\to\infty
+    $$
+    
+    对于很小的 $r$，其行为与 de-Sitter 时空相似
+    
+    $$
+    g_{tt}\to -\left(1-c^2r^2 \right),\quad g^{rr} \to \left(1-c^2r^2 \right)\quad \mathrm{as}\quad r\to 0
+    $$
+    
+    $g_{tt}=0$ 给出无限红移面的位置。若度规参数满足 $0<g<0.5 b_0^2 $，则上面几何代表一系列双视界黑洞；当 $g^2=0.5b_0^2$，得到单视界黑洞；若 $g^2>0.5b_0^2$，则黑洞没有视界。特别地，当 $g^2=0$，黑洞有一个视界。
+\end{frame}
+
+\begin{frame}{曲率张量和不变量的正则性}
+    可通过黎曼和里奇张量各分量是否发散来判断时空的正则性、奇异性。坐标基底，非零黎曼曲率张量分量
+
+    $$
+    R^0_{~~ 110} 
+    =-\frac{b_0^2\left(3r^8 - 12 g^4 r^4 + g^8 \right) }{\left(r^4+g^4 \right)^3 } 
+    $$
+    
+    $$
+    R^0_{~~220} = R^0_{~~330} = R^2_{~~112} = R^3_{~~113}
+    =\frac{b_0^2\left(r^4-g^4 \right) }{\left(r^4+g^4 \right)^2 }
+    $$
+    
+    $$
+    R^3_{~~223}
+    =-\frac{b_0^2 }{r^4+g^4 } 
+    $$
+    
+    非零 Ricci 张量分量
+    
+    $$
+    R_{00} = -R_{11} = -\frac{b_0^2\left(r^8-12g^4r^4+3g^8 \right) }{\left(r^4+g^4 \right)^3 } 
+    $$
+    
+    $$
+    R_{22} = R_{33} = \frac{b_0^2 \left(3g^4-r^4 \right) }{\left(r^4+g^4 \right)^2 }
+    $$
+    
+    当 $r\to 0 $，两个张量的分量都有限；当 $r\to \infty $，所有分量趋于零。
+\end{frame}
+
+\begin{frame}
+    三个标量不变量：
+    
+    Ricci 标量
+    
+    $$
+    R = g^{\mu\nu}R_{\mu\nu}
+    =\frac{4b_0^2\left(3g^8-5g^4r^4 \right) }{\left(r^4+g^4 \right)^3 }
+    $$
+    
+    Ricci contraction
+    
+    $$
+    R_{\mu\nu} R^{\mu\nu}
+    =\frac{4b_0^2 \left(r^{16}-14g^4r^{12}+74g^8r^8-30g^{12}r^4+9g^{16} \right) }{\left(r^4+g^4 \right)^6 }
+    $$
+    
+    Kretschmann scalar
+    
+    $$
+    K
+    =R_{\mu\nu\lambda\delta} R^{\mu\nu\lambda\delta}
+    =\frac{8\left(3g^{16}-10g^{12}r^4+74 g^8 r^8-34g^4r^{12}+7r^{16} \right)b_0^4 }{\left(r^4+g^4 \right)^6 }
+    $$
+    
+    在 $r\to 0$ 时，三个不变量也都有限。 
+\end{frame}
+
+\begin{frame}{能量情况}
+    定义 $\rho=-T_t^t,\tau=t_r^r,p=T_\theta^\theta=T_\phi^\phi $
+
+    $$
+    \rho=-\tau
+    =\frac{b_0^2\left(3g^4-r^4 \right) }{\kappa \left(r^4+g^4 \right)^2 } 
+    $$
+    
+    $$
+    p
+    =-\frac{b_0^2\left(3g^8-12g^4r^4+r^8 \right) }{\kappa \left(r^4+g^4 \right)^3 }
+    $$
+    
+    NEC (Nullu Energy Condition) $\rho+\tau \geqslant 0,\rho+p\geqslant 0 $，第一个在 $\rho+\tau=0 $ 时自动满足；
+    
+    $$
+    \rho+p
+    =\frac{2b_0^2 r^4\left(r^4-7g^4 \right) }{\kappa \left(r^4+g^4 \right)^3 }
+    $$
+    
+    第二个满足，只能 $r^4\leqslant 7g^4 $
+\end{frame}
+
+\begin{frame}{裸电奇点解}
+    Ricci  标量
+
+    $$
+    R
+    =g_{\mu\nu} R^{\mu\nu}
+    =\frac{4 }{r^2 } - \frac{4f(r) }{r^2 } - \frac{8f'(r) }{r } - 2f''(r) 
+    $$
+
+    通过变量替换 $\tilde{E}=E^2$ 可以写为
+    
+    $$
+    R
+    =-8\kappa \left(L-FL_F \right)
+    =-\frac{8\gamma\kappa \eta\tilde{E}^2\left(10+3\eta\tilde{E} \right) }{\left(-2+\eta\tilde{E} \right)^3 }
+    $$
+    
+    Ricci contraction
+    
+    $$
+    R_{\mu\nu} R^{\mu\nu}
+    =8\left[\frac{f'(r) }{r } + \frac{f(r)-1 }{r^2 }  \right]^2 + 8 \left[\frac{f'(r) }{r } + \frac{f''(r) }{2 }  \right]^2
+    $$
+    
+    $$
+    \begin{aligned}
+        R_{\mu\nu} R^{\mu\nu}
+        &=8\kappa\left[\left(L - 2FL_F \right)^2 + L^2 \right] \\
+        &=\frac{16\kappa \gamma^2 \tilde{E}^2 \left\{16+\eta \tilde{E}\left[112+\eta\tilde{E}\left(296+3\eta \tilde{E}\left(20+3\eta\tilde{E} \right) \right) \right] \right\} }{\left(-2+\eta\tilde{E} \right)^6 }
+    \end{aligned}
+    $$ 
+\end{frame}
+
+\begin{frame}
+    在 $\tilde{E}=2/\eta $ 或 $r=0$ 处标量发散，或者说 $r=0$ 是个时空奇点。可以计算，Kretschmann 标量 $R_{\mu\nu\lambda\delta}R^{\mu\nu\lambda\delta}  $ 在 $r=0$ 处也发散。
+\end{frame}
 
 \section{Nonlinear Electrodynamics in f(T) Gravity and Generalized Second Law of Thermodynamics}
 
+\subsection{f(T)引力和NLED基础}
+
+\begin{frame}
+
+    $f(T)$ 引力中的基本元素是四分量场 $h_a(x^\mu)$，其中英文字母标记切空间，希腊字母标记时空。$h_a=h_a^\mu\partial_\mu$，分量满足
+
+    $$
+    h_\mu^a h_b^\mu = \delta_b^a,\quad h_\mu^a h_a^\nu = \delta_\mu^\nu.
+    $$
+
+    其与度规张量 $g_{\mu\nu}$ 的关系为 $ g_{\mu\nu}=\eta_{ab}h_\mu^ah_\nu^b$，其中 $\eta_{ab}=\mathrm{diag}(1,-1,-1,-1)$ 是切空间中的闵氏度规。借助魏森博克联络 $\Gamma_{~~\mu\nu}^{\lambda}=h_a^\lambda \partial_\nu h_\mu^a$，扭率张量 $T^\rho_{~~\mu\nu}$ 和张量 $S_\rho^{~~\mu\nu}$ 可定义为
+
+    $$
+    T^{\lambda}_{~~\nu\mu} = \Gamma^\lambda_{~~\nu\mu} - \Gamma^\lambda_{~~\mu\nu} = h_a^\lambda\left(\partial_\nu h_\mu^a - \partial_\mu h_\nu^a \right),
+    $$
+
+    $$
+    S_\rho^{~~\mu\nu} = \frac{1 }{2 } \left(K^{\mu\nu}_{~~~~\rho} + \delta_\rho^\mu T^{\theta\nu}_{~~~~\theta} - \delta_\rho^\nu T^{\theta\mu}_{~~~~\theta} \right),
+    $$
+
+    其中，$K^{\mu\nu}_{~~~~\rho}=-\frac{1}{2}(T^{\mu\nu}_{~~~~\rho}-T^{\nu\mu}_{~~~~\rho}-T^{\mu\nu}-T_\rho^{~~\mu\nu}) $
+
+    $f(T)$ 引力的作用量
+
+    $$
+    S = \frac{1}{2\kappa^2}\int \mathrm{d}^4 x [ef(T)+L_m]
+    $$
+
+    其中，$e=\sqrt{-g},\kappa^2=8\pi G$，$G$ 是引力常量，$L_m$ 是宇宙中物质拉格朗日密度。
+    
+\end{frame}
+
+\begin{frame}
+    对作用量变分可得场方程
+
+    $$
+    \left[e^{-1}\partial_\mu \left(e S_a^{~~\mu\nu} + h_a^\lambda T^\rho_{~~\mu\lambda} S_\rho^{~~\nu\mu} \right) \right] f_T + S_a^{~~\mu\nu} \partial_\mu(T) f_{TT} + \frac{1 }{4 } h_a^\nu f
+    =\frac{1 }{2 } \kappa^2 h_a^\rho T_\rho^\nu
+    $$
+    
+    其中，$f_T=\mathrm{d}f/\mathrm{d}T,f_{TT}=\mathrm{d}^2f/\mathrm{d}T^2$，$T_\rho^\nu$ 是理想流体的能-动张量。平坦 FRW 宇宙线元
+
+    $$
+    \mathrm{d}s^2
+    =\mathrm{d}t^2 - a^2(t)\left(\mathrm{d}x^2+\mathrm{d}y^2+\mathrm{d}z^2 \right),
+    $$
+
+    其中，$a$ 是依赖于时间的标量因子，相应 $h_\mu^a=\mathrm{diag}(1,a,a,a)$
+
+    modified Friedmann equations
+
+    $$
+    12 H^2 f_T + f = 2\kappa^2 \rho_t,
+    $$
+
+    $$
+    48H^2\dot{H} f_{TT} - \left(12 H^2 + 4\dot{H} \right) f_T - f= 2\kappa^2 \rho_t,
+    $$
+
+    其中，$H=\dot{a}/a$ 是哈勃参数，$\rho_t,p_t$ 是宇宙的总能量密度和压力。
+\end{frame}
+
+\begin{frame}{非线性电动力学}
+    对任意物理量 $Y$，体积空间平均值定义为
+
+    $$
+    \bar{Y}
+    =\lim_{V\to V_0} \frac{1 }{V } \int Y\sqrt{-g} \mathrm{d}^3 x,
+    $$
+
+    其中，$g$ 是度规行列式，$\displaystyle{V=\int\sqrt{-g}\mathrm{d}^3 x } $，电场和磁场的平均值
+
+    $$
+    \bar{E}_i = 0,\quad
+    \bar{B}_i = 0,\quad
+    \overline{E_i B_i} = 0,\quad
+    \overline{E_i E_j} = -\frac{1 }{3 } E^2 g_{ij},\quad
+    \overline{B_i B_j} = -\frac{1 }{3 } B^2 g_{ij},
+    $$
+
+    利用电磁场不变量 $F,F^*$ 来表达拉氏量，保留至二阶
+
+    $$
+    \mathcal{L}=-\frac{1 }{4 } F + \omega F^2 + \eta_0 F^{*2},
+    $$
+
+    其中，$F=F_{\mu\nu} F^{\mu\nu}=2(B^2-E^2),F^*=F_{\mu\nu}^*F^{\mu\nu}=-4\vec{E}\cdot\vec{B}$，$\omega_0,\eta_0$ 是任意常数。
+
+    相应能-动张量
+
+    $$
+    T_{\mu\nu}
+    =-4\mathcal{L}_F F_\mu^{~~\alpha} F_{\alpha\nu} + \left(F^* \mathcal{L}_{F^*} - \mathcal{L} \right) g_{\mu\nu},
+    $$
+
+\end{frame}
+
+\begin{frame}
+    结合电磁场平均值以及理想流体 $T_{\mu\nu}=(\rho+p)u_\mu u_\nu-p g_{\mu\nu}$，可得能量密度 $\rho$ 和压力 $p$
+
+    $$
+    \rho = -\mathcal{L} - 4E^2 \mathcal{L}_F,
+    $$
+
+    $$
+    p = \mathcal{L} + \frac{4 }{3 } \left(E^2-2B^2 \right)\mathcal{L}_F,
+    $$
+
+    考虑等离子体中迅速衰减至零的电场，进一步有
+
+    $$
+    \rho_B = \frac{1 }{2 } B^2\left(1-8\omega B^2 \right),
+    $$
 
 
-\subsection{非线性电动力学模型和场方程}
+    $$
+    p_B = \frac{1 }{6 } B^2 \left(1-40\omega_0 B^2 \right),
+    $$
 
-\subsection{点电荷的能量}
+    当 $\omega_0=\eta_0=0$ 时，拉氏量退化为线性麦克斯韦拉氏量，能动张量也退化
 
-\subsection{真空双折射}
+    $$
+    \mathcal{L} = -\frac{1 }{4 } F,\quad
+    T_{\mu\nu} = F_\mu^{~~\alpha} F_{\alpha\nu} + \frac{1 }{4 } F g_{\mu\nu}.
+    $$
 
-\subsection{拉格朗日量的因果性和单一性条件}
+    对于非线性过程
 
-\subsection{新NLE与广义相对论的耦合}
+    $$
+    \rho = 3p = \frac{1 }{2 } \left(E^2 + B^2 \right),
+    $$
 
-\subsection{结论}
+    这表明宇宙由普通辐射组成，具有正压力。
+
+\end{frame}
+
+\subsection{宇宙学参数和热力学}
+
+\begin{frame}
+    场方程可写为
+
+    $$
+    \frac{3 H^2 }{\kappa^2 } = \rho_t,\quad
+    -\frac{2\dot{H} }{\kappa^2 }  = \rho_t + p_t,
+    $$
+    
+    其中，$\rho_t=\rho_m+\rho_B+\rho_T,p_t=p_m+p_B+p_T$，脚标 $m,B,T$ 分别代表物质，磁场和扭率的贡献。
+
+    $$
+    \rho_T = \frac{1 }{2\kappa^2 } \left(-12 H^2 f_T - f + 6H^2 \right),
+    $$
+
+    $$
+    p_T = -\frac{1 }{2\kappa^2 } \left[48\dot{H}H^2 f_{TT} - \left(12 H^2 + 4\dot{H} \right) f_T - f + 6 H^2 + 4\dot{H} \right],
+    $$
+
+    为了方便，取 $p_m=0$，能量守恒方程
+
+    $$
+    \dot{\rho}_m + 3H \rho_m = 0,
+    $$
+
+    $$
+    \dot{\rho}_B + 3H\left(\rho_B + p_B \right) = 0,
+    $$
+
+    $$
+    \dot{\rho}_T + 3H\left(\rho_T + p_T \right) = 0,
+    $$
+
+\end{frame}
+
+\begin{frame}
+    第一条方程解得
+
+    $$
+    \rho_m = \rho_{m0} a^{-3},
+    $$
+
+    其中，$a_{m0}$ 是任意常量。
+
+    第二条方程解得
+
+    $$
+    B=\frac{B_0}{a^2},
+    $$
+
+    其中，$B_0$ 是任意常数。这表明磁场能量密度的演化随宇宙的膨胀而衰减。
+
+    EoS 参数
+
+    $$
+    \begin{aligned}
+        \omega_t
+        &=\left\{-\frac{1 }{\kappa^2 } \left[48\dot{H}H^2 f_{TT} - \left(12 H^2 + 4\dot{H} \right) f_T - f + 6 H^2 + 4\dot{H} \right] + \frac{B^2 }{6 } \left(1-40\omega_0 B^2 \right) \right\} \\
+        &\times \left\{\rho_{m0} a^{-3} + \frac{1 }{2\kappa^2 } \left[6 H^2 - f-12 H^2 f_T \right] + \frac{B^2 }{2 } \left[1-8\omega_0 B^2 \right] \right\}^{-1}
+        \end{aligned}
+    $$
+
+    减速参数是宇宙膨胀加速度的度量，其由下式给出
+
+    $$
+    q = -1 - \frac{\dot{H} }{H^2 } .
+    $$
+
+    负的 $q$ 意味着加速状态。
+
+\end{frame}
+
+\begin{frame}
+    目前 $q_t=\frac{1}{2}(1+3\omega_t)$，于是
+    $$
+    \begin{aligned}
+        2q_t
+        &=1 + 3\left[-\frac{1 }{\kappa^2 } \left(48\dot{H} H^2 f_{TT} - \left(12 H^2 + 4\dot{H} \right) f_T - f + 6H^2 + 4\dot{H} \right) + \frac{B^2 }{6 } \left(1-40\omega_0 B^2 \right) \right] \\
+        &\times \left[\rho_{m0}a^{-3} + \frac{1 }{2 } \left(6H^2-f-12H^2 f_T \right) + \frac{B^2 }{2 } \left(1-8\omega_0 B^2 \right) \right]^{-1}
+    \end{aligned}
+    $$
+
+    这是 $f(T)$ 的EoS(Equation of State)，可以通过几个 $f(T)$ 模型来检查这些宇宙学参数的行为。
+\end{frame}
+
+\begin{frame}{广义热力学第二定律(GSLT)}
+    GLST说，在视界里和视界上的总熵不随时间减少。
+
+    由热力学第一定律有克劳修斯关系 $-\mathrm{d}E=T_X\mathrm{d}S_X$，其中 $S_X=A/(4G)$ 是 Bekenstein 熵，$A=4\pi R_X^2$ 是视界面积，$X$ 是任意视界，$T_X=1/(2\pi R_X)$ 是霍金温度。Miao 等人发现在 $f(T)$ 引力中热力学第一定律被违背，这导致额外的熵增项 $S_P$；而在 $f_{TT}$ 很小时，热力学第一定律成立，这时熵 $S_X=(Af_T)/(4G)$，而与 $S_P$ 无关。下面采用更一般的方法来研究磁 $f(T)$ 场景下的 GSLT。熵对时间微分
+
+    $$
+    \frac{\mathrm{d}S_X }{\mathrm{d}t } + \frac{\mathrm{d}S_P }{\mathrm{d}t } = \frac{\pi R_X }{G } \left(2\dot{R}_X f_T + R_X\dot{T} f_{TT} \right).
+    $$
+
+    利用吉布斯方程找到视界熵正常熵 $S_I$ 的变化率
+
+    $$
+    \frac{\mathrm{d}S_I }{\mathrm{d}t } 
+    =\frac{1 }{T_X } \left(\frac{\mathrm{d}E_I }{\mathrm{d}t } + p_t\frac{\mathrm{d}V }{\mathrm{d}t }  \right),
+    $$
+
+    其中，$E_I=\rho_t V,V=4\pi R_X^3/3$ 是视界体积。计算得
+
+    $$
+    \frac{\mathrm{d}S_I }{\mathrm{d}t } 
+    =\frac{4\pi R_X^2 }{T_X } \left(\dot{R}_X - H R_X \right)\left(\rho_t+p_t \right).
+    $$
+    
+\end{frame}
+
+\begin{frame}
+    总熵对时间的微分
+
+    $$
+    \begin{aligned}
+        &\frac{\mathrm{d}S_X }{\mathrm{d}t } + \frac{\mathrm{d}S_P }{\mathrm{d}t } + \frac{\mathrm{d}S_I }{\mathrm{d}t } \\
+        =&\frac{\pi R_X }{G } \bigg\{2\dot{R}_X f_T + R_X\dot{T}f_{TT} \\
+        &+ 8\pi G R_X^2 \left[\rho_{m0}a^{-3} + \frac{1 }{\kappa^2 } \left(4\dot{H} T f_{TT} + 2\dot{H}\left(f_T-1 \right) \right) + \frac{2B_0^2 }{3a^4 } \left(1-\frac{16\omega_0 B_0^2 }{a^4 }  \right) \right] \\
+        &\times \left[\dot{R}_X - H R_X \right] \bigg\}
+    \end{aligned}
+    $$
+
+    GSLT $(\dot{S}_X+\dot{S}_I+\dot{S}_P)\geqslant 0$，下面讨论两种常用的宇宙学视界。
+
+\end{frame}
+
+\begin{frame}{哈勃视界(Hubble Horizon)}
+    假设FRW宇宙热力学系统的边界被处于平衡状态的表观视界(apparent horizon)占据。对于平坦的 FRW，它退化为半径为 $R_H$ 的哈勃视界
+
+    $$
+    R_H = \frac{1 }{H } ,\quad
+    \dot{R}_H = -\frac{\dot{H} }{H^2 }
+    $$
+
+    把任意视界 $X$ 替换为 $H$ 得
+
+    $$
+    \begin{aligned}
+        &\frac{\mathrm{d}S_X }{\mathrm{d}t } + \frac{\mathrm{d}S_P }{\mathrm{d}t } + \frac{\mathrm{d}S_I }{\mathrm{d}t } \\
+        =&-\frac{\pi }{G H} \bigg\{\frac{2\dot{H} }{H^2 } f_T + 12\dot{H}f_{TT} +\frac{8\pi G }{H^2 }\left(1+\frac{\dot{H} }{H^2 }  \right) \\
+        &\times \left[\rho_{m0}a^{-3} + \frac{1 }{\kappa^2 } \left(4\dot{H}T f_{TT} + 2\dot{H}\left(f_T-1 \right) \right) + \frac{2 B_0^2 }{3a^4 } \left(1-\frac{16\omega_0 B_0^2 }{a^4 }  \right) \right] \bigg\}.
+        \end{aligned}
+    $$
+
+    这是哈勃视界上所有宇宙中流体总熵的变化率。
+    
+\end{frame}
+
+\begin{frame}{事件视界(Event Horizon)}
+    事件视界半径
+
+    $$
+    R_E = a\int_0^{\infty} \frac{\mathrm{d}t }{a } ,\quad
+    \dot{R}_E = H R_E - 1.
+    $$
+
+    把任意视界 $X$ 替换为 $E$ 得
+
+    $$
+    \begin{aligned}
+        &\frac{\mathrm{d}S_E}{\mathrm{d}t} + \frac{\mathrm{d}S_I}{\mathrm{d}t} + \frac{\mathrm{d}S_P}{\mathrm{d}t} \\
+        =&\frac{\pi}{G} \left(a\int_t^\infty \frac{\mathrm{d}t}{a}\right)\bigg[2\left(\dot{a}\int_t^\infty -1 \right) - 12H\dot{H} \left(a\int_t^\infty \frac{\mathrm{d}t}{a}\right) \\
+        &+8\pi G\times \left(a\int_t^\infty\frac{\mathrm{d}t}{a}\right)^2\left(\left(\dot{a}\int_t^\infty\frac{\mathrm{d}t}{a}-1\right)-H\left(a\int_t^\infty\frac{\mathrm{d}t}{a}\right)\right) \\
+        &\times \left\{\rho_{m0}a^{-3} + \frac{1}{\kappa^2} \left(4\dot{H}T f_{TT} + 2\dot{H}(f_T-1)\right) + \frac{2B_0^2}{3a^4}\left(1-\frac{16\omega_0B_0^2}{a^4}\right) \right\} \bigg]. 
+    \end{aligned}
+    $$
+
+    这代表了平衡态事件视界上宇宙中总熵的变化率。
+
+\end{frame}
+
+\subsection{f(T)模型的一个例子}
+
+\begin{frame}
+    考虑如下形式的标量因子
+
+    $$
+    a(t)
+    =a_0\left(t_s-t \right)^{-h},\quad
+    h>0,\quad t_s\geqslant t
+    $$
+
+    哈勃参数 $H$，扭率(torsion)标量 $T$，$\dot{{H}}$ 为
+
+    $$
+    H = \frac{h }{t_s - t } ,\quad
+    T = -\frac{6h^2 }{\left(t_s-t \right)^2 } ,\quad
+    \dot{H} = \frac{h }{\left(t_s - t \right)^2 }.
+    $$
+
+    把上式代入修正 Friedmann 方程的第一条可得
+
+    $$
+    \begin{aligned}
+        f(T)
+        =&c_1\left(-\frac{T }{6h^2 }  \right)^{1/2} + \frac{2\kappa^2 \rho_{m0} }{a_0^3\left(3h+1 \right) } \left(-\frac{6h^2 }{T }  \right)^{3h/2} + \frac{\kappa^2 B_0^2 }{a_0^4\left(4h+1 \right) } \left(-\frac{6h^2 }{T }  \right)^{2h} \\
+        &- \frac{8\kappa^2 B_0^4 \omega_0 }{a_0^8 \left(8h+1 \right) } \left(-\frac{6h^2 }{T }  \right)^{4h},
+    \end{aligned}
+    $$
+
+    其中，$c_1$ 由边界条件确定。
+
+\end{frame}
+
+\begin{frame}
+    两个 EoS 参数
+
+    $$
+    \omega_t
+    =\frac{20\kappa^2 B_0^4 \omega_0 }{9h^2a_0^8 } \left(1+z \right)^{(8h+2)/h} - \frac{\kappa^2 B_0^2 }{18h^2 a_0^4 } (1+z)^{(4h+2)/h} - \frac{2(3h+2) }{3h } ,
+    $$
+
+    $$
+    q_t
+    =\frac{10\kappa^2 B_0^4 \omega_0 }{3h^2 a_0^8 } (1+z)^{(8h+2)/h} - \frac{\kappa^2 B_0^2 }{12 h^2 a_0^4 } (1+z)^{(4h+2)/h} - \frac{5h+4 }{2h } ,
+    $$
+    
+\end{frame}
+
+\begin{frame}{检验GSLT}
+
+    $$
+    \begin{aligned}
+        f_{TT}
+        &=\frac{(1+z)^{4/h} }{36h^4 } \bigg[\frac{3h(3h+2)\kappa^2\rho_{m0} }{2a_0^3(3h+1) }(1+z)^3 + \frac{2h(2h+1)\kappa^2 B_0^2 }{a_0^4(4h+1) } (1+z)^4 \\
+        &- \frac{32h(4h+1)\kappa^2 B_0^4 \omega_0 }{a_0^8 (8h+1) } (1+z)^8 - \frac{c_1 }{4(1+z)^{1/h} }   \bigg].
+    \end{aligned}
+    $$
+    
+\end{frame}
+
+\begin{frame}{Hubble Horizon}
+    $$
+    \begin{aligned}
+        &\frac{\mathrm{d}S_H }{\mathrm{d}t } + \frac{\mathrm{d}S_I }{\mathrm{d}t } \\
+        =&-\frac{\pi(1+z)^{3/h} }{Gh^3 } \bigg[\frac{3h(3h+4)\kappa^2\rho_{m0} }{2a_0^3(3h+1) }(1+z)^3 + \frac{4(h+1)\kappa^2 B_0^2 }{3a_0^4(4h+1) } (1+z)^4 \\
+        &- \frac{64h(2h+1)\kappa^2 B_0^4 \omega_0 }{3a_0^8 (8h+1) } (1+z)^8- \frac{c_1 }{4h(1+z)^{1/h} } \bigg] + \frac{2\pi }{G h^3 } (1+h)(1+z)^{1/h}.
+    \end{aligned}
+    $$
+\end{frame}
+
+\subsection{总结}
 
 
 
