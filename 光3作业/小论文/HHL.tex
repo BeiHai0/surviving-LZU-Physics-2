@@ -29,7 +29,7 @@
 \usepackage{float}
 \usepackage{braket}
 \usepackage[utf8]{inputenc}
-\usepackage[utf8]{ctex}
+\usepackage{ctex}
 
 % You should use BibTeX and apsrev.bst for references
 % Choosing a journal automatically selects the correct APS
@@ -93,13 +93,86 @@ HHL算法是由 Harrow, Hassidim 和 Lloyd 提出的一种求解量子线性系�
 方程组是解决很多量子应用相关问题的基础，因此 HHL 算法是许多复杂量子算法的基本组成部分，且广泛应用于量子支持向量机、量子判别分析、量子线性回归、量子无监督学习、量子神经网络等量子机器学习算法中。在大数据时代，HHL 算法带来的加速收益相当可观。
 % Put \label in argument of \section for cross-referencing
 %\section{\label{}}
+
 \section{2. HHL算法基本原理}
+
+\subsection{A. 定义}
 
 一个线性系统问题(linear system problem, LSP)可以表述为
 
 $$
 A\vec{x} = \vec{b}
 $$
+
+其中 $A $ 是  $N_b\times N_b$ 厄米矩阵，$\vec{x},\vec{b}$ 是归一化的 $N_b$ 维矢量，$N_b=2^{n_b}$。$A$ 和 $\vec{b}$ 是已知的，而 $\vec{x}$ 待求解。
+
+HHL 算法包含五个主要组成部分：初态制备、量子相位估计(quantum phase estimation, QPE)、辅助量子比特旋转、逆量子相位估计(inverse quantum phase estimation, IQPE) 和测量。
+
+HHL 算法中，$\vec{b},\vec{x} $ 的 $N_b$ 个分量编码为 $n_b$ 个量子比特的振幅。这些量子比特称为 b-寄存器 $\ket{}_b$。
+
+除此之外还有 c-寄存器 $\ket{}_c$，用于储存矩阵 $A$ 在量子相位估计后得到的本征值。
+
+最后一部分是辅助量子比特 $\ket{}_a$。
+
+设厄米矩阵 $A$ 的本征态和本征值分别为 $\left\{\ket{u_i} \right\}$ 和 $\left\{\lambda_i \right\}$，则 $A$ 可进行谱分解
+
+$$
+A = \sum_{i=0}^{2^{n_b}-1} \lambda_i \ket{u_i}\bra{u_i}
+$$
+
+$A$ 是对角的，因此容易得到 $A^{-1}$
+
+$$
+A^{-1} = \sum_{i=0}^{2^{n_b}-1} \lambda_i^{-1} \ket{u_i}\bra{u_i}
+$$
+
+$\ket{b}$ 可以表达为
+
+$$
+\ket{b} = \sum_{j=0}^{2^{n_b}-1} b_j \ket{u_j}
+$$
+
+因此，由方程 $A\ket{x}=\ket{b}$ 有
+
+$$
+\ket{x} = A^{-1}\ket{b} = \sum_{i=0}^{2^{n_b}-1} \lambda_i^{-1}b_i \ket{u_i}
+$$
+
+由于 $\ket{x},\ket{b}$ 是归一的，因此有
+
+$$
+\sum_{j=0}^{2^{n_b}-1}\left|b_j \right|^2 = 1
+$$
+
+$$
+\sum_{i=0}^{2^{n_b}-1} \left|\lambda_i^{-1}b_i\right|^2 = 1
+$$
+
+\subsection{B. 初态制备}
+
+共有 $n_b+n+1$ 个量子比特，初始化为
+
+$$
+\ket{\Psi_0}
+=\ket{0\cdots 0}_b\ket{0\cdots 0}_c\ket{0}_a
+=\ket{0}^{\otimes n_b}\ket{0}^{\otimes n}\ket{0}
+$$
+
+设 $\vec{b} = \left(\beta_0,\beta_1,\cdots,\beta_{N_b-1} \right)^{\mathrm{T}} $则 b-寄存器 $\ket{0\cdots 0}_b$ 需要制备为
+
+$$
+\ket{b}
+=\beta_0\ket{0}+\beta_1\ket{1}+\cdots\beta_{N_b-1}\ket{N_b-1}
+$$
+
+总态变为
+
+$$
+\ket{\Psi_1}
+=\ket{b}_b\ket{0\cdots 0}_c\ket{0}_a
+$$
+
+\subsection{C. 量子相位估计}
 
 \section{3. HHL算法的简单应用}
 
