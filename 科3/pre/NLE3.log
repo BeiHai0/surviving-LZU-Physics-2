@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.1.11)  13 JAN 2025 13:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.1.11)  13 JAN 2025 14:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/ZhuanZ/Desktop/Surviving-LZU-Physics/科3/pre/pre.tex
-(c:/Users/ZhuanZ/Desktop/Surviving-LZU-Physics/科3/pre/pre.tex
+**c:/Users/ZhuanZ/Desktop/Surviving-LZU-Physics/科3/pre/NLE3.tex
+(c:/Users/ZhuanZ/Desktop/Surviving-LZU-Physics/科3/pre/NLE3.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
 (c:/texlive/2024/texmf-dist/tex/latex/beamer/beamer.cls
@@ -923,8 +923,8 @@ Package: multicol 2023/03/30 v1.9f multicolumn formatting (FMi)
 File: UTF8.enc 2021/10/16 4.8.5
 ) (c:/texlive/2024/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
 File: UTF8.chr 2021/10/16 4.8.5
-) (./pre.aux)
-\openout1 = `pre.aux'.
+) (./NLE3.aux)
+\openout1 = `NLE3.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 40.
 LaTeX Font Info:    ... okay on input line 40.
@@ -1063,9 +1063,9 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 Package hyperref Info: Link coloring OFF on input line 40.
- (./pre.out) (./pre.out)
+ (./NLE3.out) (./NLE3.out)
 \@outlinefile=\write5
-\openout5 = `pre.out'.
+\openout5 = `NLE3.out'.
 
  (c:/texlive/2024/texmf-dist/tex/latex/translator/translator-basic-dictionary-English.dict
 Dictionary: translator-basic-dictionary, Language: English 
@@ -1084,7 +1084,7 @@ Dictionary: translator-theorem-dictionary, Language: ChineseUTF8 2022/07/14 v2.5
 )
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
- (./pre.nav)
+ (./NLE3.nav)
 LaTeX Font Info:    Trying to load font information for C70+zhhei on input line 40.
  (c:/texlive/2024/texmf-dist/tex/latex/zhmetrics/c70zhhei.fd
 File: c70zhhei.fd 2009/09/23 4.8.2
@@ -1092,9 +1092,9 @@ File: c70zhhei.fd 2009/09/23 4.8.2
 File: ctex-zhmap-windows.tex 2022/07/14 v2.5.10 Windows font map loader for pdfTeX and DVIPDFMx (CTEX)
 {c:/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{UGBK.sfd}{Unicode.sfd}) [1
 
-{c:/texlive/2024/texmf-dist/fonts/enc/dvips/base/8r.enc}] (./pre.toc) [2
+{c:/texlive/2024/texmf-dist/fonts/enc/dvips/base/8r.enc}] (./NLE3.toc) [2
 
-] (./pre.toc) [3
+] (./NLE3.toc) [3
 
 ]
 LaTeX Font Info:    Trying to load font information for U+msa on input line 99.
@@ -1148,7 +1148,7 @@ Overfull \vbox (0.7511pt too high) detected at line 686
 
 ] [22
 
-] (./pre.toc) [23
+] (./NLE3.toc) [23
 
 ] [24
 
@@ -1240,7 +1240,7 @@ Overfull \vbox (2.76758pt too high) detected at line 1158
 
  <./img/fig5.png> <./img/fig6.png>] [42
 
-] (./pre.toc) [43
+] (./NLE3.toc) [43
 
 ] [44
 
@@ -1294,32 +1294,32 @@ Overfull \vbox (0.1868pt too high) detected at line 1564
 
 ]
 \tf@nav=\write6
-\openout6 = `pre.nav'.
+\openout6 = `NLE3.nav'.
 
 \tf@toc=\write7
-\openout7 = `pre.toc'.
+\openout7 = `NLE3.toc'.
 
 \tf@snm=\write8
-\openout8 = `pre.snm'.
+\openout8 = `NLE3.snm'.
 
- (./pre.aux)
+ (./NLE3.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2022/07/14>
  ***********
-Package rerunfilecheck Info: File `pre.out' has not changed.
+Package rerunfilecheck Info: File `NLE3.out' has not changed.
 (rerunfilecheck)             Checksum: 55D71400C07574D4450F6CE772236924;3253.
  ) 
 Here is how much of TeX's memory you used:
- 32686 strings out of 474115
- 644204 string characters out of 5747696
+ 32687 strings out of 474115
+ 644242 string characters out of 5747696
  1963190 words of memory out of 5000000
  53982 multiletter control sequences out of 15000+600000
  624826 words of font info for 246 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,16n,123p,764b,721s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 128i,16n,123p,765b,721s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex9.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on pre.pdf (60 pages, 868738 bytes).
+Output written on NLE3.pdf (60 pages, 868738 bytes).
 PDF statistics:
  2534 PDF objects out of 2984 (max. 8388607)
  2067 compressed objects within 21 object streams

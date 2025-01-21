@@ -754,7 +754,7 @@ F^{\alpha\beta}
 =\frac{\partial H }{\partial P } P^{\alpha\beta} + \frac{\partial H }{\partial Q } \tilde{P}^{\alpha\beta} \tag{6}
 $$
 
-作用量：
+NLED 与引力耦合作用量：
 
 $$
 S
@@ -805,22 +805,22 @@ $$
 
 ## NLED Black holes
 
-SSS line element
+SSS 线元
 
 $$
 \mathrm{d}s^2 = -\psi\mathrm{d}t^2 + \psi^{-1} \mathrm{d}r^2 + r^2\left(\mathrm{d}\theta^2+\sin^2\theta\mathrm{d}\phi^2 \right) \tag{13}
 $$
 
-solution
+一种解为
 
 $$
 \psi
 =1-\frac{8\pi }{r } \int_{0}^{r} \left(\sqrt{r^4+1} - r^2 \right)\mathrm{d}r \tag{14}
 $$
 
-正则解 $D_{,r}=1/r,E_{,r}=r^2/\left(r^4+1 \right) $
+上面的解有正则奇点；另一个正则解 $D_{,r}=1/r,E_{,r}=r^2/\left(r^4+1 \right) $
 
-metric function
+度规函数
 
 $$
 \psi_{HI}
@@ -832,6 +832,11 @@ SSS 线元 PT
 $$
 \psi_{PT}
 =1-\frac{d }{r } + \frac{8\pi }{r } \int_{0}^{r} H(x) x^2\mathrm{d}x \tag{16}
+$$
+
+$$
+F_{\mu\nu}
+=-\frac{e }{r^2 } \frac{\partial H(P,0) }{\partial P } 2\delta_\mu^{[0}\delta_{\nu}^{r]}
 $$
 
 $P=-e^2/4r^2 $
