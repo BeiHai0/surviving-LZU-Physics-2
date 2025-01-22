@@ -254,7 +254,67 @@ $$
 
 \subsection{D. 受控旋转和辅助比特的测量}
 
+下一步要基于 c-量子比特储存的本征值来旋转辅助比特 $\ket{0}_a$，总态变为
 
+$$
+\ket{\Psi_5}
+=\sum_{j=0}^{2^{n_b}-1}b_j\ket{u_j}\ket{\tilde{\lambda}_j}\left(\sqrt{1-\frac{C^2 }{\tilde{\lambda}_j^2 } }\ket{0}_a + \frac{C }{\tilde{\lambda_j} }\ket{1}_a \right)
+$$
+
+其中 $C$ 是常数。
+
+当对辅助量子比特进行测量时，其会塌缩至 $\ket{0}$ 或 $\ket{1}$。若其塌缩至 $\ket{0}$，则重复上面过程直至其塌缩为 $\ket{1}$。最终，总态塌缩至
+
+$$
+\ket{\Psi_6}
+=\frac{1 }{\sqrt{\sum\limits_{j=0}^{2^{n_b}-1}\left|b_j C/\tilde{\lambda}_j \right|^2} }\sum_{j=0}^{2^{n_b}-1}b_j \ket{u_j}\ket{\tilde{\lambda}_j}\frac{C }{\tilde{\lambda}_j }\ket{1}_a
+$$
+
+其中，前面多出的系数是归一化因子。
+
+\subsection{E. 非计算(uncomputation)-逆量子相位估计(IQPE)}
+
+非计算通过逆量子相位估计来完成。
+
+首先对 c-量子比特进行量子傅里叶变换，总态变为
+
+$$
+\begin{aligned}
+\ket{\Psi_7}
+&=\frac{1 }{\sqrt{\sum\limits_{j=0}^{2^{n_b}-1}\left|b_j C/\tilde{\lambda}_j \right|^2} }\sum_{j=0}^{2^{n_b}-1}\frac{b_j C }{\tilde{\lambda}_j }  \ket{u_j}\mathrm{QFT}(\ket{\tilde{\lambda}_j})\ket{1}_a \\
+&=\frac{1 }{\sqrt{\sum\limits_{j=0}^{2^{n_b}-1}\left|b_j C/\tilde{\lambda}_j \right|^2} }\sum_{j=0}^{2^{n_b}-1}\frac{b_j C }{\tilde{\lambda}_j }  \ket{u_j}\otimes \\
+&\left(\frac{1 }{2^{n/2} } \sum_{y=0}^{2^n-1} \mathrm{e}^{\mathrm{i}2\pi y\tilde{\lambda}_j/N} \ket{y} \right) \ket{1}_a\\
+\end{aligned}
+$$
+
+接着以 c-量子比特为控制比特对 b-寄存器施加逆受控旋转。当第 $r$ 个控制量子比特为 $\ket{0}$ 时，$\ket{u_j}$ 不变；当第 $r$ 个控制量子比特为 $\ket{1}$ 时，对 $\ket{u_j}$ 施加 $\left(U^{-1} \right)^{2^r}$， $U^{-1}=\mathrm{e}^{-\mathrm{i}At}$。于是，总态变为
+
+$$
+\begin{aligned}
+\ket{\Psi_8}
+&=\frac{1 }{2^{n/2}\sqrt{\sum\limits_{j=0}^{2^{n_b}-1}\left|b_j C/\tilde{\lambda}_j \right|^2} } \sum_{j=0}^{2^{n_b}-1}\frac{b_j C }{\tilde{\lambda}_j }\ket{u}_j \sum_{y=0}^{2^n-1}\ket{y}\ket{1}_a \\
+&=\frac{C }{2^{n/2}\sqrt{\sum\limits_{j=0}^{2^{n_b}-1}\left|b_j C/\lambda_j \right|^2} } \ket{x} \sum_{y=0}^{2^n-1} \ket{y}\ket{1}_a
+\end{aligned}
+$$
+
+最后，对 c-量子比特施加 Hadamard 门，得到
+
+$$
+\begin{aligned}
+\ket{\Psi_9}
+&=\frac{1 }{\sqrt{\sum\limits_{j=0}^{2^{n_b}-1}\left|b_j C/\lambda_j \right|^2} }\sum_{j=0}^{2^{n_b}-1} \frac{b_j C }{\lambda_j } \ket{u_j}\ket{0}^{\otimes n}\ket{1}_a \\
+&=\frac{C }{\sqrt{\sum\limits_{j=0}^{2^{n_b}-1}\left|b_j C/\lambda_j \right|^2} }\ket{x}_b\ket{0}_c^{\otimes n}\ket{1}_a
+\end{aligned}
+$$
+
+若 $C$ 为实数，利用归一化条件 $\displaystyle{\sum_{j=0}^{2^{n_b}-1}\left|\lambda_j^{-1}b_j \right|^2=1 }$ 得到
+
+$$
+\ket{\Psi_9}
+=\ket{x}_b\ket{0}_c^{\otimes n}\ket{1}_a
+$$
+
+最终，经一系列操作后，解 $\ket{x}$ 储存在 b-寄存器中。
 
 \section{3. HHL算法的简单应用}
 
