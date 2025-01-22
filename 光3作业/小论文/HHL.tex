@@ -30,6 +30,7 @@
 \usepackage{braket}
 \usepackage[utf8]{inputenc}
 \usepackage{ctex}
+\usepackage{amsmath}
 
 % You should use BibTeX and apsrev.bst for references
 % Choosing a journal automatically selects the correct APS
@@ -64,7 +65,7 @@
 %\homepage[]{Your web page}
 %\thanks{}
 %\altaffiliation{}
-\affiliation{2022级理论物理2班}
+\affiliation{2022级理论物理2班 320220935801}
 
 %Collaboration name if desired (requires use of superscriptaddress
 %option in \documentclass). \noaffiliation is required (may also be
@@ -89,8 +90,7 @@
 % References should be done using the \cite, \ref, and \label commands
 \section{1. 引言}
 
-HHL算法是由 Harrow, Hassidim 和 Lloyd 提出的一种求解量子线性系统的量子算法，其利用量子态的相干叠加与纠缠等特性实现稀疏线性方程组 $A\vec{x}=\vec{b}$ 的快速求解，与经典的线性方程组求解算法相比在特定情况下可以达到指数级加速。求解线性
-方程组是解决很多量子应用相关问题的基础，因此 HHL 算法是许多复杂量子算法的基本组成部分，且广泛应用于量子支持向量机、量子判别分析、量子线性回归、量子无监督学习、量子神经网络等量子机器学习算法中。在大数据时代，HHL 算法带来的加速收益相当可观。
+HHL算法是由 Harrow, Hassidim 和 Lloyd 提出的一种求解量子线性系统的量子算法，其利用量子态的相干叠加与纠缠等特性实现稀疏线性方程组 $A\vec{x}=\vec{b}$ 的快速求解，与经典的线性方程组求解算法相比在特定情况下可以达到指数级加速。求解线性方程组是解决很多量子应用相关问题的基础，因此 HHL 算法是许多复杂量子算法的基本组成部分，且广泛应用于量子支持向量机、量子判别分析、量子线性回归、量子无监督学习、量子神经网络等量子机器学习算法中。在大数据时代，HHL 算法带来的加速收益相当可观。
 % Put \label in argument of \section for cross-referencing
 %\section{\label{}}
 
@@ -172,7 +172,89 @@ $$
 =\ket{b}_b\ket{0\cdots 0}_c\ket{0}_a
 $$
 
+为了方便，在不引起歧义的情况下，下文中 ket 的下标省略。
+
 \subsection{C. 量子相位估计}
+
+首先，对c-量子比特施加 Hadamard 门，得到
+
+$$
+\ket{\Psi_2}
+=I^{\otimes n_b}\otimes H^{\otimes n}\otimes I\ket{\Psi_1}=
+\ket{b}\frac{1 }{2^{n/2} } (\ket{0}+\ket{1})^{\otimes n} \ket{0}
+$$
+
+接着，以 c-量子比特为控制比特，依次对 $\ket{b}$ 施加受控 $U^{2^r}$ 门，其中 $r$ 为 c-量子比特的下标，$U=\mathrm{e}^{\mathrm{i}At}$。
+
+假设 $\ket{b}$ 为 $U$ 的本征态，对应本征值为 $\mathrm{e}^{\mathrm{i}2\pi \phi}$，它们本征方程 $U$ 的本征方程
+
+$$
+U\ket{b} = \mathrm{e}^{\mathrm{i}2\pi\phi} \ket{b}
+$$
+
+当控制比特为 $\ket{0}$，$\ket{b}$ 不受影响；当控制比特为 $\ket{1}$，$U$ 将作用于 $\ket{b}$。结合本征方程可知，总态变为
+
+$$
+\begin{aligned}
+\ket{\Psi_3}
+&=\ket{b}\otimes \bigg[\frac{1 }{2^{n/2} } \left(\ket{0}+\mathrm{e}^{\mathrm{i}2\pi \phi 2^{n-1}}\ket{1} \right)\otimes \\
+&\left(\ket{0}+\mathrm{e}^{\mathrm{i}2\pi \phi 2^{n-2}}\ket{1} \right)\otimes \cdots \otimes \left(\ket{0}+\mathrm{e}^{\mathrm{i}2\pi \phi 2^0}\ket{1} \right) \bigg]\otimes\ket{0}_a \\
+&=\ket{b} \otimes \left(\frac{1 }{2^{n/2} } \sum_{k=0}^{2^n-1} \mathrm{e}^{2\pi\mathrm{i}\phi k} \ket{k} \right)\otimes \ket{0}_a
+\end{aligned}
+$$
+
+然后对 c-量子比特施加逆量子傅里叶变换(IQFT)，总态变为
+
+$$
+\begin{aligned}
+\ket{\Psi_4}
+&=\ket{b}\mathrm{IQFT}\left(\frac{1 }{2^{n/2} } \sum_{k=0}^{2^n-1} \mathrm{e}^{2\pi\mathrm{i}\phi k} \ket{k} \right) \ket{0}_a \\
+&=\ket{b}\frac{1 }{2^{n/2} } \sum_{k=0}^{2^n-1} \mathrm{e}^{2\pi\mathrm{i}\phi k} \mathrm{IQFT}(\ket{k}) \ket{0}_a \\
+&=\ket{b}\frac{1 }{2^{n/2} } \sum_{k=0}^{2^n-1} \mathrm{e}^{2\pi\mathrm{i}\phi k} \left(\frac{1 }{2^{n/2} } \sum_{y=0}^{2^n-1} \mathrm{e}^{-\mathrm{i}2\pi yk/N} \ket{y} \right) \ket{0}_a \\
+&=\frac{1 }{2^n } \ket{b} \sum_{y=0}^{2^n-1}\sum_{k=0}^{2^n-1}\mathrm{e}^{\mathrm{i}2\pi k(\phi-y/N)}\ket{y}\ket{0}_a
+\end{aligned}
+$$
+
+由上式可见，只有当 $\ket{y}$ 满足条件 $\phi-y/N=0$ 才贡献有限振幅 $\displaystyle{\sum_{k=0}^{2^n-1} \mathrm{e}^0 = 2^n }$，其他情况下贡献的振幅为零，即 $\displaystyle{\sum_{k=0}^{2^n-1}\mathrm{e}^{\mathrm{i}2\pi k (\phi-y/N)}=0,\phi-y/N\ne 0 }$，因此 $\ket{\Psi_4}$ 可以写为
+
+$$
+\ket{\psi_4}
+=\frac{1 }{2^n } \ket{b} \sum_{k=0}^{2^n-1} \mathrm{e}^{\mathrm{i}2\pi k\cdot 0} \ket{N\phi}\ket{0}_a
+=\ket{b}\ket{N\phi}\ket{0}_a
+$$
+
+因此，c-量子比特就储存了 $U$ 的本质值 $\mathrm{e}^{\mathrm{i}2\pi \phi} $ 的相位 $\phi$，精确度取决于用于储存的量子比特的数量 $n$。
+
+由于 $U$ 与 $A$ 的关系为 $U = \mathrm{e}^{\mathrm{i}At}$，若 $\ket{b}=\ket{u_j}$ 则
+
+$$
+U\ket{b} = \mathrm{e}^{\mathrm{i}\lambda_j t} \ket{b}
+$$
+
+与 $U\ket{b}=\mathrm{e}^{\mathrm{i}2\pi \phi}\ket{b}$ 对比，得到 $\phi=\lambda_j t/2\pi$，于是
+
+$$
+\ket{\Psi_4}
+=\ket{u_j} \ket{N\lambda_j t/2\pi}\ket{0}_a
+$$
+
+因此 $A$ 的本征值就编码到了 c-量子比特上。上面的推导均在 $\ket{b}$ 为 $A$ 的某一本征态的假设下进行。一般地，$\ket{b}$ 为 $A$ 的所有本征态的线性叠加，则
+
+$$
+\ket{\Psi_4}
+=\sum_{j=0}^{2^{n_b}-1} b_j\ket{u_j}\ket{N\lambda_j t/2\pi} \ket{0}_a
+$$
+
+通常 $\lambda_j$ 不是整数。选择 $t$ 使得 $\tilde{\lambda}_j\equiv N\lambda_j t/2\pi$ 为整数，则 $\ket{\Psi_4} $ 可写为
+
+$$
+\ket{\Psi_4}
+=\sum_{j=0}^{2^{n_b}-1} b_j \ket{u_j} \ket{\tilde{\lambda}_j}\ket{0}_a
+$$
+
+\subsection{D. 受控旋转和辅助比特的测量}
+
+
 
 \section{3. HHL算法的简单应用}
 
